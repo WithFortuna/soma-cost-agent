@@ -20,6 +20,11 @@ HOOK_FILES = ["cse-harness-common.py", "cse-user-prompt-submit.py", "cse-stop-po
 LEGACY_HOOK_FILES = ["harness_common.py", "user_prompt_submit.py", "stop_policy_review.py"]
 AGENT_FILES = ["cse-policy-evidence.toml", "cse-policy-application.toml", "cse-policy-reviewer.toml"]
 LEGACY_AGENT_FILES = ["policy-evidence.toml", "policy-application.toml", "policy-reviewer.toml"]
+DEFAULT_MODEL = "gpt-5.5"
+INTERACTIVE_MODEL_CHOICES = [
+    ("gpt-5.5", "recommended; strongest for evidence-heavy policy reasoning"),
+    ("gpt-5.4-mini", "faster and lower cost for lighter policy checks"),
+]
 HOOK_EVENT_SPECS = {
     "UserPromptSubmit": {
         "script": "cse-user-prompt-submit.py",
@@ -64,6 +69,70 @@ def backup(path: Path) -> Path | None:
     backup_path = path.with_name(path.name + f".bak-{timestamp()}")
     shutil.copy2(path, backup_path)
     return backup_path
+
+
+def normalize_model(value: str | None) -> str:
+    model = (value or "").strip()
+    if not model:
+        fail("model must not be empty")
+    if any(char in model for char in "\r\n\t"):
+        fail("model must be a single-line model id")
+    if len(model) > 160:
+        fail("model id is unexpectedly long")
+    return model
+
+
+def choose_model_interactively() -> str:
+    if not sys.stdin.isatty():
+        return DEFAULT_MODEL
+
+    print("Choose the Cost SOMA custom-agent model:")
+    for index, (model, description) in enumerate(INTERACTIVE_MODEL_CHOICES, start=1):
+        print(f"  {index}) {model} - {description}")
+    print("  3) custom model id")
+
+    while True:
+        raw_choice = input(f"Model [1: {DEFAULT_MODEL}]: ").strip()
+        if not raw_choice:
+            return DEFAULT_MODEL
+        if raw_choice in {"1", INTERACTIVE_MODEL_CHOICES[0][0]}:
+            return INTERACTIVE_MODEL_CHOICES[0][0]
+        if raw_choice in {"2", INTERACTIVE_MODEL_CHOICES[1][0]}:
+            return INTERACTIVE_MODEL_CHOICES[1][0]
+        if raw_choice == "3":
+            return normalize_model(input("Custom model id: "))
+        if raw_choice.startswith("gpt-") or "/" in raw_choice or ":" in raw_choice:
+            return normalize_model(raw_choice)
+        print("Choose 1, 2, 3, or enter a model id.")
+
+
+def resolve_model(model: str | None) -> str:
+    if model is not None:
+        return normalize_model(model)
+    return choose_model_interactively()
+
+
+def toml_string(value: str) -> str:
+    return json.dumps(value, ensure_ascii=False)
+
+
+def inject_agent_model(text: str, model: str) -> str:
+    model_line = f"model = {toml_string(model)}"
+    lines = text.splitlines()
+    for index, line in enumerate(lines):
+        if line.strip().startswith("model ="):
+            lines[index] = model_line
+            return "\n".join(lines) + ("\n" if text.endswith("\n") else "")
+
+    insert_at = 0
+    for index, line in enumerate(lines):
+        if line.startswith("description ="):
+            insert_at = index + 1
+            break
+        if line.startswith("name ="):
+            insert_at = index + 1
+    lines.insert(insert_at, model_line)
+    return "\n".join(lines) + ("\n" if text.endswith("\n") else "")
 
 
 def assert_distribution_shape() -> None:
@@ -219,13 +288,14 @@ def run_smoke(target: Path, state: dict[str, str]) -> None:
             fail(f"smoke command returned ok=false: {payload}")
 
 
-def activate(target: Path, skip_smoke: bool) -> None:
+def activate(target: Path, skip_smoke: bool, model: str | None) -> None:
     require_python()
     assert_distribution_shape()
     if not target.exists() or not target.is_dir():
         fail(f"target must be an existing project directory: {target}")
 
     target = target.resolve()
+    configured_model = resolve_model(model)
     policy_tool = PLUGIN_ROOT / "scripts" / "policy_tool.py"
     document_root = PLUGIN_ROOT / "document"
     python = str(Path(sys.executable).resolve())
@@ -257,6 +327,7 @@ def activate(target: Path, skip_smoke: bool) -> None:
     for name in AGENT_FILES:
         src = PLUGIN_ROOT / "agents" / name
         text = transform_text(src.read_text(encoding="utf-8"), policy_tool=policy_tool, document_root=document_root, python=python)
+        text = inject_agent_model(text, configured_model)
         (agents_dir / name).write_text(text, encoding="utf-8")
 
     for src_skill in sorted((PLUGIN_ROOT / "skills").glob("cost-soma-*")):
@@ -275,6 +346,7 @@ def activate(target: Path, skip_smoke: bool) -> None:
         "document_root": str(document_root),
         "policy_tool": str(policy_tool),
         "python": python,
+        "model": configured_model,
         "audit_dir": str(codex_dir / "cse-audit"),
         "installed_at": dt.datetime.now(dt.timezone.utc).isoformat(),
     }
@@ -288,6 +360,7 @@ def activate(target: Path, skip_smoke: bool) -> None:
     print("Cost SOMA Policy Harness activated.")
     print(f"target: {target}")
     print(f"state: {state_path}")
+    print(f"model: {configured_model}")
     if backup_path:
         print(f"hooks backup: {backup_path}")
 
@@ -295,13 +368,17 @@ def activate(target: Path, skip_smoke: bool) -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Activate Cost SOMA Policy Harness in a local Codex project.")
     parser.add_argument("--target", required=True, help="Target Codex project directory.")
+    parser.add_argument(
+        "--model",
+        help=f"Cost SOMA custom-agent model to pin. Defaults to an interactive prompt in a TTY, otherwise {DEFAULT_MODEL}.",
+    )
     parser.add_argument("--skip-smoke", action="store_true", help="Install without running policy_tool smoke checks.")
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    activate(Path(args.target).expanduser(), args.skip_smoke)
+    activate(Path(args.target).expanduser(), args.skip_smoke, args.model)
     return 0
 
 

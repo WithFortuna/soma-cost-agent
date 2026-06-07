@@ -29,6 +29,8 @@ The activator skill installs project-scoped runtime files into the currently ope
 
 Use `cost-soma-activate-project` or `/activate-harness` to activate. Use `cost-soma-deactivate-project` or `/deactivate-harness` to remove the project integration.
 
+Activation asks the user to choose the Cost SOMA custom-agent model. The selected model is recorded in `.codex/cse-policy-harness.json` and pinned into every injected `.codex/agents/cse-*.toml` file.
+
 ## Runtime Roles
 
 ### Hooks
@@ -61,7 +63,7 @@ For every detected Cost SOMA policy question, the injected context tells Codex t
 - Spawn `cse-policy-reviewer`.
 - Revise and finalize from the reviewer findings.
 
-`cse-policy-evidence` keeps `model = "gpt-5.5"` and `model_reasoning_effort = "high"`. Other subagents inherit the parent session unless the local agent file says otherwise.
+All `cse-policy-*` custom agents use the model selected during activation. `cse-policy-evidence` also keeps `model_reasoning_effort = "high"`.
 
 ### Scripts
 

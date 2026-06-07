@@ -37,12 +37,15 @@ def main() -> int:
         docs = common.document_root()
         docs_text = str(docs) if docs else "document/rules.json and document/*.md"
         tool_text = str(common.policy_tool_path())
+        model = common.harness_state().get("model")
+        model_text = f"Configured Cost SOMA model is {model}. " if isinstance(model, str) and model.strip() else ""
         common.emit_user_prompt_context(
             "[Cost SOMA Policy Harness]\n"
             "This looks like a Cost SOMA activity-expense policy question. "
             "Always use team mode. Use the cost-soma-policy-orchestrator skill. "
             "Use only local documents "
             f"from {docs_text} through {tool_text}. "
+            f"{model_text}"
             "Spawn custom subagents cse-policy-evidence and cse-policy-application in parallel, "
             "wait for both summaries, draft the answer, then spawn cse-policy-reviewer before "
             "the final answer. Keywords are routing hints only; final decisions require "

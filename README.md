@@ -25,7 +25,13 @@ codex plugin add cost-soma-policy-harness-mac@soma-cost-agent
 /activate-harness
 ```
 
-활성화 스킬은 현재 프로젝트를 target으로 잡고, 내부적으로 `install/activate.py`를 실행합니다. smoke check도 자동 실행됩니다.
+활성화 스킬은 먼저 Cost SOMA custom agent가 사용할 모델을 묻습니다.
+
+- `gpt-5.5`: 기본 추천값. 근거 수집, 정책 판단, 답변 검토처럼 복잡한 작업에 사용합니다.
+- `gpt-5.4-mini`: 속도와 비용을 우선할 때 사용합니다.
+- Custom model id: 별도 provider/model을 알고 있을 때만 직접 입력합니다.
+
+선택한 모델은 `.codex/cse-policy-harness.json`에 저장되고 `.codex/agents/cse-*.toml`에 주입됩니다. 그 다음 현재 프로젝트를 target으로 잡고 내부적으로 `install/activate.py`를 실행합니다. smoke check도 자동 실행됩니다.
 
 ## Local Marketplace Test
 
@@ -80,7 +86,7 @@ target 프로젝트에 아래 파일을 생성하거나 갱신합니다.
 Codex 안에서 activator skill을 실행할 수 없는 환경에서는 직접 실행할 수 있습니다.
 
 ```bash
-python3 install/activate.py --target /path/to/codex-project
+python3 install/activate.py --target /path/to/codex-project --model gpt-5.5
 python3 tests/smoke_mac.py --target /path/to/codex-project
 python3 install/deactivate.py --target /path/to/codex-project
 ```

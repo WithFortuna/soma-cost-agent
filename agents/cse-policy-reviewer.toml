@@ -1,5 +1,6 @@
 name = "cse-policy-reviewer"
 description = "Review Cost SOMA draft answers for missing sections, unsupported certainty, weak evidence, and category-specific omissions."
+model = "gpt-5.5"
 sandbox_mode = "read-only"
 developer_instructions = """
 You are the Cost SOMA answer reviewer.
