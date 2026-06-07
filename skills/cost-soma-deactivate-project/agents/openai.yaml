@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deactivate Cost SOMA"
+  short_description: "Remove the Cost SOMA harness from the current Codex project."
+  default_prompt: "이 프로젝트에서 Cost SOMA 하네스 비활성화해줘"

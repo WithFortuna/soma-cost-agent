@@ -1,5 +1,34 @@
 # Cost SOMA Harness Workflow
 
+## Distribution Layers
+
+### Standard Plugin Layer
+
+The plugin distributes reusable components:
+
+- `skills/`
+- `scripts/`
+- `document/`
+- `hooks/`
+- `agents/`
+- `commands/`
+- `install/`
+- `tests/`
+
+Plugin installation makes the activator skills available. It does not assume a single target project.
+
+### One-Command Activator Layer
+
+The activator skill installs project-scoped runtime files into the currently open Codex project:
+
+- `.codex/hooks.json`
+- `.codex/hooks/*.py`
+- `.codex/agents/*.toml`
+- `.agents/skills/cost-soma-*`
+- `.codex/cost-soma-policy-harness.json`
+
+Use `cost-soma-activate-project` or `/activate-harness` to activate. Use `cost-soma-deactivate-project` or `/deactivate-harness` to remove the project integration.
+
 ## Runtime Roles
 
 ### Hooks
@@ -15,6 +44,8 @@ Hooks route and audit. They do not make the final policy decision.
 
 The harness uses function-split skills.
 
+- `cost-soma-activate-project`: runs the bundled installer against the current project.
+- `cost-soma-deactivate-project`: removes Cost SOMA project integration from the current project.
 - `cost-soma-policy-orchestrator`: owns the whole answer flow, subagent order, final Korean answer shape, and form-file boundary.
 - `cost-soma-evidence`: collects document-backed candidates, supporting evidence, conflicting evidence, and source references.
 - `cost-soma-application`: prepares 신청방법, 글쓰기 포맷, choice-required fields, draftable fields, 유의사항, and form-packet summaries.
@@ -53,7 +84,13 @@ All script output is JSON only. Document truth comes only from `document/rules.j
 
 ```mermaid
 flowchart TD
-    A["사용자 질문"] --> B["UserPromptSubmit Hook"]
+    PX["플러그인 설치"] --> A0["현재 프로젝트 열기"]
+    A0 --> A1["활성화 요청 또는 /activate-harness"]
+    A1 --> A2["cost-soma-activate-project"]
+    A2 --> A3["install/activate.py --target 현재 프로젝트"]
+    A3 --> A4["hooks / agents / repo skills / state 설치"]
+    A4 --> A["사용자 정책 질문"]
+    A --> B["UserPromptSubmit Hook"]
     B --> C{"Cost SOMA 정책 질문?"}
     C -- "No" --> Z["일반 Codex 흐름"]
     C -- "Yes" --> D["Team mode 컨텍스트 주입"]
@@ -69,9 +106,9 @@ flowchart TD
     L -- "No" --> M["최종 답변"]
     L -- "Yes" --> N["form-packet 생성"]
     N --> O{"필수 입력값 충분?"}
-    O -- "No" --> P["missing_required_fields만 사용자에게 요청"]
+    O -- "No" --> X["missing_required_fields만 사용자에게 요청"]
     O -- "Yes" --> Q["Documents/Spreadsheets로 원본 양식 작성 + QA"]
-    P --> M
+    X --> M
     Q --> M
     M --> R["Stop Hook validate + audit log"]
 ```

@@ -1,7 +1,7 @@
 {
   "name": "cost-soma-policy-harness-mac",
-  "version": "0.2.0",
-  "description": "Evidence-first Codex beta harness for Cost SOMA expense policy questions.",
+  "version": "0.3.0",
+  "description": "Evidence-first Codex beta harness for Cost SOMA expense policy questions, with one-command project activation.",
   "author": {
     "name": "Cost SOMA local team"
   },
@@ -15,8 +15,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Cost Soma Policy Harness Mac",
-    "shortDescription": "Answer Cost SOMA expense questions from local evidence.",
-    "longDescription": "Adds Cost SOMA policy skills, hooks, subagent instructions, JSON-only scripts, and form-packet planning so Codex answers activity-expense questions from local document evidence and can prepare real local form artifacts when requested.",
+    "shortDescription": "Activate and run Cost SOMA expense-policy workflows.",
+    "longDescription": "Adds one-command project activation plus Cost SOMA policy skills, hooks, subagent instructions, JSON-only scripts, local documents, and form-packet planning so Codex answers activity-expense questions from evidence and can prepare local form artifacts when requested.",
     "developerName": "Cost SOMA local team",
     "category": "Productivity",
     "capabilities": [
@@ -25,8 +25,9 @@
       "Interactive"
     ],
     "defaultPrompt": [
+      "이 프로젝트에 Cost SOMA 하네스 활성화해줘.",
       "Cost SOMA 활동비 질문에 문서 근거로 답해줘.",
-      "이 비용이 지원 가능한지 근거와 함께 확인해줘."
+      "이 프로젝트에서 Cost SOMA 하네스 비활성화해줘."
     ]
   }
 }

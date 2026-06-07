@@ -26,6 +26,8 @@ REQUIRED_TARGET_FILES = [
     ".agents/skills/cost-soma-evidence/SKILL.md",
     ".agents/skills/cost-soma-application/SKILL.md",
     ".agents/skills/cost-soma-answer-review/SKILL.md",
+    ".agents/skills/cost-soma-activate-project/SKILL.md",
+    ".agents/skills/cost-soma-deactivate-project/SKILL.md",
 ]
 
 
@@ -108,6 +110,12 @@ def check_target_layout(target: Path) -> None:
     for rel in REQUIRED_TARGET_FILES:
         assert_exists(target / rel)
     assert_hook_command_is_unix(target)
+    activate_skill = (target / ".agents/skills/cost-soma-activate-project/SKILL.md").read_text(encoding="utf-8")
+    deactivate_skill = (target / ".agents/skills/cost-soma-deactivate-project/SKILL.md").read_text(encoding="utf-8")
+    if "../../install/activate.py" in activate_skill or "../../install/deactivate.py" in deactivate_skill:
+        fail("installed activator skills still contain relative installer paths")
+    if "install/activate.py" not in activate_skill or "install/deactivate.py" not in deactivate_skill:
+        fail("installed activator skills do not reference installer scripts")
 
 
 def check_policy_tool(target: Path, state: dict[str, str]) -> None:

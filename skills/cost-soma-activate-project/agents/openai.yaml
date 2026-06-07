@@ -1,0 +1,4 @@
+interface:
+  display_name: "Activate Cost SOMA"
+  short_description: "Install the Cost SOMA harness into the current Codex project."
+  default_prompt: "이 프로젝트에 Cost SOMA 하네스 활성화해줘"
