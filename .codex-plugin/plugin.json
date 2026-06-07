@@ -1,6 +1,6 @@
 {
   "name": "cost-soma-policy-harness-mac",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Evidence-first Codex beta harness for Cost SOMA expense policy questions, with one-command project activation.",
   "author": {
     "name": "Cost SOMA local team"

@@ -106,7 +106,7 @@ README.md
 WORKFLOW.md
 ```
 
-MCP runtime은 포함하지 않습니다. 정책 처리는 `scripts/policy_tool.py` -> `scripts/policy_core.py` -> `scripts/policy_engine.py` 경로로만 동작합니다.
+MCP runtime은 포함하지 않습니다. `hooks/hooks.json`도 포함하지 않습니다. Hook은 플러그인 설치 시 전역으로 돌지 않고, activation 후 target 프로젝트의 `.codex/hooks.json`에만 기록됩니다. 정책 처리는 `scripts/policy_tool.py` -> `scripts/policy_core.py` -> `scripts/policy_engine.py` 경로로만 동작합니다.
 
 ## Manual Fallback
 
