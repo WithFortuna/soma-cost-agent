@@ -1,6 +1,6 @@
 {
   "name": "cost-soma-policy-harness-mac",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Evidence-first Codex beta harness for Cost SOMA expense policy questions, with one-command project activation.",
   "author": {
     "name": "Cost SOMA local team"
@@ -26,7 +26,7 @@
     ],
     "defaultPrompt": [
       "이 프로젝트에 Cost SOMA 하네스 활성화해줘.",
-      "Cost SOMA 활동비 질문에 문서 근거로 답해줘.",
+      "Cost SOMA 근거 문서를 HTML로 보여줘.",
       "이 프로젝트에서 Cost SOMA 하네스 비활성화해줘."
     ]
   }

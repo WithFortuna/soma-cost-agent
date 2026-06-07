@@ -90,9 +90,12 @@ def transform_text(text: str, *, policy_tool: Path, document_root: Path, python:
     tool_cmd = shlex.quote(str(policy_tool))
     activate_cmd = shlex.quote(str(plugin_root / "install" / "activate.py"))
     deactivate_cmd = shlex.quote(str(plugin_root / "install" / "deactivate.py"))
+    viewer_cmd = shlex.quote(str(plugin_root / "scripts" / "render_evidence_view.py"))
     replacements = [
         ("python3 ../../install/activate.py", f"{python_cmd} {activate_cmd}"),
         ("python3 ../../install/deactivate.py", f"{python_cmd} {deactivate_cmd}"),
+        ("python3 ../../scripts/render_evidence_view.py", f"{python_cmd} {viewer_cmd}"),
+        ("python3 scripts/render_evidence_view.py", f"{python_cmd} {viewer_cmd}"),
         ("python3 scripts/policy_tool.py", f"{python_cmd} {tool_cmd}"),
         ("cost-soma-policy-harness/scripts/policy_tool.py", str(policy_tool)),
         ("document/rules.json and document/*.md", f"{document_root / 'rules.json'} and {document_root}/*.md"),

@@ -26,6 +26,7 @@ REQUIRED_TARGET_FILES = [
     ".agents/skills/cost-soma-evidence/SKILL.md",
     ".agents/skills/cost-soma-application/SKILL.md",
     ".agents/skills/cost-soma-answer-review/SKILL.md",
+    ".agents/skills/cost-soma-evidence-viewer/SKILL.md",
     ".agents/skills/cost-soma-activate-project/SKILL.md",
     ".agents/skills/cost-soma-deactivate-project/SKILL.md",
 ]
@@ -158,6 +159,40 @@ def check_policy_tool(target: Path, state: dict[str, str]) -> None:
             fail(f"form-packet smoke missing key: {key}")
 
 
+def check_evidence_viewer(target: Path, state: dict[str, str]) -> None:
+    python = state["python"]
+    plugin_root = Path(state["plugin_root"])
+    viewer_script = plugin_root / "scripts" / "render_evidence_view.py"
+    assert_exists(viewer_script)
+
+    env = os.environ.copy()
+    env["COST_SOMA_DOCUMENT_ROOT"] = state["document_root"]
+    env["COST_SOMA_HARNESS_STATE"] = str(target / ".codex" / STATE_NAME)
+    output_dir = target / "outputs" / "cost-soma-evidence-smoke"
+    payload = run_json(
+        [
+            python,
+            str(viewer_script),
+            "--question",
+            "라즈베리파이와 허브 구매 가능해?",
+            "--category",
+            "material_purchase",
+            "--output-dir",
+            str(output_dir),
+        ],
+        cwd=target,
+        env=env,
+    )
+    viewer_path = Path(str(payload.get("viewer_path", "")))
+    assert_exists(viewer_path)
+    html = viewer_path.read_text(encoding="utf-8")
+    for marker in ["Cost SOMA Evidence Viewer", "04-board-support-items.md", "라즈베리파이", "class=\"line hit\""]:
+        if marker not in html:
+            fail(f"evidence viewer HTML missing marker: {marker}")
+    if not payload.get("viewer_url", "").startswith("file://"):
+        fail("evidence viewer did not return a file:// viewer_url")
+
+
 def check_hooks(target: Path, state: dict[str, str]) -> None:
     env = os.environ.copy()
     env["COST_SOMA_HARNESS_STATE"] = str(target / ".codex" / STATE_NAME)
@@ -214,6 +249,7 @@ def main() -> int:
     check_target_layout(target)
     state = load_state(target)
     check_policy_tool(target, state)
+    check_evidence_viewer(target, state)
     check_hooks(target, state)
 
     print("Cost SOMA Mac harness smoke passed.")

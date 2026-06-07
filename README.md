@@ -131,9 +131,20 @@ python3 scripts/policy_tool.py classify --question "디자인 외주 맡기려�
 python3 scripts/policy_tool.py form --question "맥북용 허브독 사려고함"
 python3 scripts/policy_tool.py form-packet --question "구매대행 신청서 만들어줘" --category material_purchase --stage application
 python3 scripts/policy_tool.py validate --question "디자인 외주 맡기려고해" --answer-file answer.md
+python3 scripts/render_evidence_view.py --question "라즈베리파이와 허브 구매 가능해?"
 ```
 
 모든 command는 JSON만 출력합니다.
+
+## Evidence HTML Viewer
+
+사용자가 근거 문서 원문을 보고 싶어하면 Codex에 아래처럼 말합니다.
+
+```text
+근거 문서를 HTML로 보여줘.
+```
+
+`cost-soma-evidence-viewer` skill은 관련 `document/*.md` 파일을 검색해 `outputs/cost-soma-evidence/<timestamp>/index.html`로 렌더링하고, 포함된 근거 파일과 로컬 HTML 링크를 보고합니다.
 
 ## Answer Shape
 
