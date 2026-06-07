@@ -1,9 +1,8 @@
-# Cost SOMA Policy Harness for Mac
+# 소마 프로젝트 활동비 관리 플러그인
 
-Mac 팀 내부 배포용 Codex beta harness입니다. 플러그인처럼 설치하고, Codex 안에서 한 번 활성화하면 해당 프로젝트에 hook, custom subagent, repo-scoped skills가 주입됩니다.
+Mac 팀 내부 배포용 플러그인입니다. 설치하고 Codex 안에서 한 번 활성화하면 해당 프로젝트에 hook, custom subagent, repo-scoped skills가 주입됩니다.
 
-## Recommended Flow
-
+## 권장 설치법
 1. GitHub repo를 Codex marketplace로 등록합니다.
 
 ```bash
@@ -25,15 +24,13 @@ codex plugin add cost-soma-policy-harness-mac@soma-cost-agent
 /activate-harness
 ```
 
-활성화 스킬은 먼저 Cost SOMA custom agent가 사용할 모델을 묻습니다.
+| 수동 활성화는 우측을 참고. ## 수동 플러그인 활성화
+| 활성화 시에 변경사항이 궁금한 경우는 우측을 참고. ## 플러그인 활성화 시 변경 파일
 
-- `gpt-5.5`: 기본 추천값. 근거 수집, 정책 판단, 답변 검토처럼 복잡한 작업에 사용합니다.
-- `gpt-5.4-mini`: 속도와 비용을 우선할 때 사용합니다.
-- Custom model id: 별도 provider/model을 알고 있을 때만 직접 입력합니다.
+활성화 스킬은 현재 프로젝트를 target으로 잡고, 내부적으로 `install/activate.py`를 실행합니다. smoke check도 자동 실행됩니다.
 
-선택한 모델은 `.codex/cse-policy-harness.json`에 저장되고 `.codex/agents/cse-*.toml`에 주입됩니다. 그 다음 현재 프로젝트를 target으로 잡고 내부적으로 `install/activate.py`를 실행합니다. smoke check도 자동 실행됩니다.
 
-## Local Marketplace Test
+## [대안] 깃 클론을 이용한 설치
 
 로컬에서 GitHub 경로 대신 현재 repo를 marketplace로 등록하려면:
 
@@ -53,7 +50,7 @@ codex plugin add cost-soma-policy-harness-mac@soma-cost-agent
 
 기존에 0.3.2 이하로 프로젝트를 활성화한 사용자는 marketplace upgrade 후 해당 프로젝트에서 다시 활성화하면 됩니다. 재활성화 과정에서 예전 `policy-*` agent 파일, `user_prompt_submit.py`/`stop_policy_review.py` hook 파일, 예전 state 파일은 `cse-` 접두사 runtime으로 교체됩니다.
 
-## Deactivate
+## 설치 제거
 
 Codex에 아래처럼 말합니다.
 
@@ -67,7 +64,7 @@ Codex에 아래처럼 말합니다.
 /deactivate-harness
 ```
 
-## What Activation Installs
+## 플러그인 활성화 시 변경 파일
 
 target 프로젝트에 아래 파일을 생성하거나 갱신합니다.
 
@@ -81,7 +78,7 @@ target 프로젝트에 아래 파일을 생성하거나 갱신합니다.
 
 기존 `.codex/hooks.json`이 있으면 timestamp 백업을 만든 뒤 `UserPromptSubmit`, `Stop` hook에 Cost SOMA hook을 병합합니다. hook/agent/state 파일명은 기존 설정과 겹치지 않도록 `cse-` 접두사를 사용합니다. 예전 버전에서 설치된 Cost SOMA runtime 파일과 hook entry는 재활성화 시 정리됩니다. hook command는 활성화에 사용된 Python 절대 경로를 사용합니다.
 
-## Manual Fallback
+## 수동 플러그인 활성화
 
 Codex 안에서 activator skill을 실행할 수 없는 환경에서는 직접 실행할 수 있습니다.
 
@@ -96,17 +93,6 @@ Python 3.10 이상이 필요합니다. 부족하면 Homebrew Python을 설치한
 ```bash
 brew install python
 ```
-
-## Evidence HTML Viewer
-
-사용자가 근거 문서 원문을 보고 싶어하면 Codex에 아래처럼 말합니다.
-
-```text
-근거 문서를 HTML로 보여줘.
-```
-
-`cost-soma-evidence-viewer` skill은 관련 `document/*.md` 파일을 검색해 `outputs/cost-soma-evidence/<timestamp>/index.html`로 렌더링하고, 포함된 근거 파일과 로컬 HTML 링크를 보고합니다.
-
 ## Answer Shape
 
 Cost SOMA 정책 답변은 항상 아래 섹션을 포함해야 합니다.
@@ -123,16 +109,25 @@ Cost SOMA 정책 답변은 항상 아래 섹션을 포함해야 합니다.
 
 ## 제공하는 기능
 
-1. 지원가능/불가능 여부
+1. 지원가능/불가능 여부 파악
 2. 게시글 초안
 3. 증빙서류,신청 서류 작성 기능
 4. 원본 문서 html 뷰로 보기 기능
+  사용자가 근거 문서 원문을 보고 싶어하면 Codex에 아래처럼 말합니다.
+```text
+근거 문서를 HTML로 보여줘.
+```
 
-## Response Comparison Example
+  `cost-soma-evidence-viewer` skill은 관련 `document/*.md` 파일을 검색해 `outputs/cost-soma-evidence/<timestamp>/index.html`로 렌더링하고, 포함된 근거 파일과 로컬 HTML 링크를 보고합니다.
+
+## 플러그인 사용 vs 미사용 응답 비교
 
 ```text
-내가한 공통 질문: 그래픽카드, 라즈베리파이, 독허브, supabase1년 구독하려고해      1. 이 플러그인 썼을 때 응답 결론
+공통 질문: 그래픽카드, 라즈베리파이, 독허브, supabase1년 구독하려고해
+```
 
+### 1. 플러그인 사용시 응답
+```text
   - 그래픽카드: 실물 그래픽카드 구매는 지원 불가. 온라인 GPU 렌탈, 예: Vast.ai류, 만 기타 사용료로 신청 가능.
   - 라즈베리파이: 재료 구매비로 신청 가능. 문서에 지원 가능 예시로 직접 나옵니다.
   - 독허브: USB/멀티허브 성격이면 재료 구매비 가능 후보. 다만 개인 노트북용 도킹스테이션/컴퓨터 부속품이면 반려 리스크가 큽니다. Docker Hub 구독을 뜻한 거라면 AI·SW 서비스 이용료 쪽으로
@@ -192,9 +187,11 @@ Cost SOMA 정책 답변은 항상 아래 섹션을 포함해야 합니다.
   주요 출처는 04-board-support-items.md, 03-board-activity-plan.md, 05-board-payment-methods.md, 06-board-evidence-documents.md, rules.json입니다. 문서상 라즈베리파이와 허브는 재료 구매
   비 지원 가능 예시에 있고, 그래픽카드는 온라인 렌탈만 지원되며 재료 구매비 신청은 불가합니다. AI·SW 서비스 이용료는 월 단위 구독/선불 충전 방식만 가능하고 연간 단위 구독형 서비스는 지
   원 불가로 되어 있습니다.
+```
 
 
-2. 플러그인 안썼을 때 응답
+### 2. 플러그인 미사용시 응답
+```text
 문서 기준 결론은 이겁니다. 1년치 선결제는 하지 마세요. 특히 Docker Hub, Supabase 같은 구독형 서비스는 연간 단위 구독형
   서비스 지원 불가라서, 월 단위 결제로 신청해야 합니다.
 
