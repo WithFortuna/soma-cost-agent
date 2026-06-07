@@ -4,9 +4,16 @@ Mac 팀 내부 배포용 Codex beta harness입니다. 플러그인처럼 설치�
 
 ## Recommended Flow
 
-1. 팀 내부 marketplace 또는 internal URL에서 `Cost Soma Policy Harness Mac` 플러그인을 설치합니다.
-2. Cost SOMA를 사용할 Codex 프로젝트를 엽니다.
-3. Codex에 아래처럼 말합니다.
+1. GitHub repo를 Codex marketplace로 등록합니다.
+
+```bash
+codex plugin marketplace add WithFortuna/soma-cost-agent --ref main
+codex plugin add cost-soma-policy-harness-mac@soma-cost-agent
+```
+
+2. Codex에서 새 thread를 엽니다.
+3. Cost SOMA를 사용할 Codex 프로젝트를 엽니다.
+4. Codex에 아래처럼 말합니다.
 
 ```text
 이 프로젝트에 Cost SOMA 하네스 활성화해줘.
@@ -19,6 +26,24 @@ Mac 팀 내부 배포용 Codex beta harness입니다. 플러그인처럼 설치�
 ```
 
 활성화 스킬은 현재 프로젝트를 target으로 잡고, 내부적으로 `install/activate.py`를 실행합니다. smoke check도 자동 실행됩니다.
+
+## Local Marketplace Test
+
+로컬에서 GitHub 경로 대신 현재 repo를 marketplace로 등록하려면:
+
+```bash
+codex plugin marketplace add .
+codex plugin add cost-soma-policy-harness-mac@soma-cost-agent
+```
+
+플러그인 파일을 수정한 뒤 배포하려면 `.codex-plugin/plugin.json`의 `version`을 올리고 push한 다음 GitHub marketplace snapshot을 갱신합니다.
+
+```bash
+codex plugin marketplace upgrade soma-cost-agent
+codex plugin add cost-soma-policy-harness-mac@soma-cost-agent
+```
+
+설치 또는 재설치 후에는 새 thread에서 테스트해야 Codex가 갱신된 plugin skills를 읽습니다.
 
 ## Deactivate
 
@@ -67,6 +92,8 @@ hook과 subagent 지침은 이 state file을 통해 문서와 script 위치를 �
 
 ```text
 .codex-plugin/plugin.json
+.agents/plugins/marketplace.json
+plugins/cost-soma-policy-harness-mac -> ..
 skills/
 scripts/
 document/
