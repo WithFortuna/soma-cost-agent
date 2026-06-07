@@ -29,6 +29,7 @@ codex plugin add cost-soma-policy-harness-mac@soma-cost-agent
 
 활성화 스킬은 현재 프로젝트를 target으로 잡고, 내부적으로 `install/activate.py`를 실행합니다. smoke check도 자동 실행됩니다.
 
+
 ## [대안] 깃 클론을 이용한 설치
 
 로컬에서 GitHub 경로 대신 현재 repo를 marketplace로 등록하려면:
@@ -82,7 +83,7 @@ target 프로젝트에 아래 파일을 생성하거나 갱신합니다.
 Codex 안에서 activator skill을 실행할 수 없는 환경에서는 직접 실행할 수 있습니다.
 
 ```bash
-python3 install/activate.py --target /path/to/codex-project
+python3 install/activate.py --target /path/to/codex-project --model gpt-5.5
 python3 tests/smoke_mac.py --target /path/to/codex-project
 python3 install/deactivate.py --target /path/to/codex-project
 ```

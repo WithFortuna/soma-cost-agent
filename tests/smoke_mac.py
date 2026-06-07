@@ -82,7 +82,7 @@ def load_state(target: Path) -> dict[str, str]:
     state_path = target / ".codex" / STATE_NAME
     assert_exists(state_path)
     payload = read_json(state_path)
-    required = ["plugin_root", "document_root", "policy_tool", "python"]
+    required = ["plugin_root", "document_root", "policy_tool", "python", "model"]
     missing = [key for key in required if not payload.get(key)]
     if missing:
         fail(f"state file missing keys: {', '.join(missing)}")
@@ -132,6 +132,22 @@ def check_target_layout(target: Path) -> None:
         fail("installed activator skills still contain relative installer paths")
     if "install/activate.py" not in activate_skill or "install/deactivate.py" not in deactivate_skill:
         fail("installed activator skills do not reference installer scripts")
+
+
+def check_agent_model_config(target: Path, state: dict[str, str]) -> None:
+    expected_line = f"model = {json.dumps(state['model'], ensure_ascii=False)}"
+    for rel in [
+        ".codex/agents/cse-policy-evidence.toml",
+        ".codex/agents/cse-policy-application.toml",
+        ".codex/agents/cse-policy-reviewer.toml",
+    ]:
+        text = (target / rel).read_text(encoding="utf-8")
+        if expected_line not in text:
+            fail(f"{rel} does not pin configured model: {state['model']}")
+
+    evidence_text = (target / ".codex/agents/cse-policy-evidence.toml").read_text(encoding="utf-8")
+    if 'model_reasoning_effort = "high"' not in evidence_text:
+        fail("evidence agent lost high reasoning effort setting")
 
 
 def check_policy_tool(target: Path, state: dict[str, str]) -> None:
@@ -263,6 +279,7 @@ def main() -> int:
     scan_distribution()
     check_target_layout(target)
     state = load_state(target)
+    check_agent_model_config(target, state)
     check_policy_tool(target, state)
     check_evidence_viewer(target, state)
     check_hooks(target, state)
