@@ -1,6 +1,6 @@
-# Cost SOMA Policy Harness for Mac
+# 소마 프로젝트 활동비 관리 플러그인
 
-Mac 팀 내부 배포용 Codex beta harness입니다. 플러그인처럼 설치하고, Codex 안에서 한 번 활성화하면 해당 프로젝트에 hook, custom subagent, repo-scoped skills가 주입됩니다.
+Mac 팀 내부 배포용 플러그인입니다. 설치하고 Codex 안에서 한 번 활성화하면 해당 프로젝트에 hook, custom subagent, repo-scoped skills가 주입됩니다.
 
 ## 권장 설치법
 1. GitHub repo를 Codex marketplace로 등록합니다.
