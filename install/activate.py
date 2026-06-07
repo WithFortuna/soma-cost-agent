@@ -120,20 +120,23 @@ def inject_agent_model(text: str, model: str) -> str:
     model_line = f"model = {toml_string(model)}"
     lines = text.splitlines()
     for index, line in enumerate(lines):
-        if line.strip().startswith("model ="):
+        parts = line.split("=", 1)
+        if len(parts) == 2 and parts[0].strip() == "model":
             lines[index] = model_line
             return "\n".join(lines) + ("\n" if text.endswith("\n") else "")
 
     insert_at = 0
     for index, line in enumerate(lines):
-        if line.startswith("description ="):
-            insert_at = index + 1
-            break
-        if line.startswith("name ="):
-            insert_at = index + 1
+        parts = line.split("=", 1)
+        if len(parts) == 2:
+            key = parts[0].strip()
+            if key == "description":
+                insert_at = index + 1
+                break
+            if key == "name":
+                insert_at = index + 1
     lines.insert(insert_at, model_line)
     return "\n".join(lines) + ("\n" if text.endswith("\n") else "")
-
 
 def assert_distribution_shape() -> None:
     required = [
