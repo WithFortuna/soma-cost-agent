@@ -1,0 +1,14 @@
+Source: assets/5f491e40-1fdf-8364-9e0e-0179ef1f978e-2222222.PNG
+Bytes: 30849
+SHA256: 2603aa98c9aca63ccf87b886f3aeabea5931fe80286eff9349799d7eca6e7e64
+Extension: .png
+Extraction method: manual image description based on visual inspection and document context
+Duplicate of: extracted/assets/004_2603aa98c9aca63c_26991e40-1fdf-820e-b7fc-81ee75bbe76d-2222222.txt
+Image size: 1368x654 RGBA
+
+--- EXTRACTED TEXT ---
+이미지 종류: 화면 캡처
+요약: 사용 신청서 작성 화면에서 여러 품목을 하나의 신청서에 추가하는 + 버튼 위치를 보여주는 화면입니다.
+
+이미지 내 주요 텍스트/의미:
+주요 표시 텍스트: 품목명, 결제방식, 세부사항, 수량, 금액, 달러, 구매사유, 첨부파일, 추가 +, 입력 추가, 저장, 취소. + 버튼으로 함께 주문하는 제품들을 추가하는 맥락에서 사용됩니다.

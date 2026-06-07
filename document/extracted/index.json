@@ -1,0 +1,632 @@
+{
+  "generated_at": "2026-06-06",
+  "source_root": "document/assets",
+  "asset_count": 45,
+  "notes": [
+    "DOCX, XLSX, PDF files were text-extracted with bundled Python libraries.",
+    "Images do not contain machine-readable text in the files; important image tables/screens were described or transcribed from visual inspection and document context.",
+    "duplicate_of points to the first extracted text file with the same SHA256 when a file is byte-for-byte duplicate."
+  ],
+  "assets": [
+    {
+      "source": "assets/10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.png",
+      "bytes": 151783,
+      "sha256": "2a1838a9934db26d55ea94c7f74a1e736ca12aa6e05473c8fc86e5f54aed89ad",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/001_2a1838a9934db26d_10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.txt",
+      "text_chars": 293,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 1759,
+        "height": 961,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/1f991e40-1fdf-83c7-8bcb-01e5f43e2c89-111.png",
+      "bytes": 151783,
+      "sha256": "2a1838a9934db26d55ea94c7f74a1e736ca12aa6e05473c8fc86e5f54aed89ad",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/002_2a1838a9934db26d_1f991e40-1fdf-83c7-8bcb-01e5f43e2c89-111.txt",
+      "text_chars": 293,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": "extracted/assets/001_2a1838a9934db26d_10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.txt",
+      "image_info": {
+        "width": 1759,
+        "height": 961,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/26091e40-1fdf-836f-b177-813f830e3097-111.png",
+      "bytes": 151783,
+      "sha256": "2a1838a9934db26d55ea94c7f74a1e736ca12aa6e05473c8fc86e5f54aed89ad",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/003_2a1838a9934db26d_26091e40-1fdf-836f-b177-813f830e3097-111.txt",
+      "text_chars": 293,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": "extracted/assets/001_2a1838a9934db26d_10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.txt",
+      "image_info": {
+        "width": 1759,
+        "height": 961,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/26991e40-1fdf-820e-b7fc-81ee75bbe76d-2222222.PNG",
+      "bytes": 30849,
+      "sha256": "2603aa98c9aca63ccf87b886f3aeabea5931fe80286eff9349799d7eca6e7e64",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/004_2603aa98c9aca63c_26991e40-1fdf-820e-b7fc-81ee75bbe76d-2222222.txt",
+      "text_chars": 202,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 1368,
+        "height": 654,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/35f91e40-1fdf-8026-a58a-c9372e9031ec-(양식) 구매대행 신청서_팀명_00.00.xlsx",
+      "bytes": 95101,
+      "sha256": "92fd1bb6072eebb6063bbe9f59c7ada8812714020144b655e8703ee80879fa34",
+      "extension": ".xlsx",
+      "extracted_text_file": "extracted/assets/005_92fd1bb6072eebb6_35f91e40-1fdf-8026-a58a-c9372e9031ec-____00.00.txt",
+      "text_chars": 818,
+      "extraction_method": "openpyxl cell values",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37091e40-1fdf-8024-a20b-fd2e219ac5b9-AWS 계정 생성 및 통합빌링 가이드.pdf",
+      "bytes": 1796231,
+      "sha256": "c5bf6c5d67a89dbe12ee254492484f1e0b68b588f82a0ad97c495e8d8114b194",
+      "extension": ".pdf",
+      "extracted_text_file": "extracted/assets/006_c5bf6c5d67a89dbe_37091e40-1fdf-8024-a20b-fd2e219ac5b9-AWS.txt",
+      "text_chars": 9340,
+      "extraction_method": "pypdf page text extraction",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37091e40-1fdf-804c-b4c7-f623743e8a54-AWS 계정 생성 및 통합빌링 가이드.pdf",
+      "bytes": 1796231,
+      "sha256": "c5bf6c5d67a89dbe12ee254492484f1e0b68b588f82a0ad97c495e8d8114b194",
+      "extension": ".pdf",
+      "extracted_text_file": "extracted/assets/007_c5bf6c5d67a89dbe_37091e40-1fdf-804c-b4c7-f623743e8a54-AWS.txt",
+      "text_chars": 9340,
+      "extraction_method": "pypdf page text extraction",
+      "duplicate_of": "extracted/assets/006_c5bf6c5d67a89dbe_37091e40-1fdf-8024-a20b-fd2e219ac5b9-AWS.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37091e40-1fdf-804c-b93b-f1c0160df6df-(양식) 클라우드 서비스 사용 동의서_000팀.docx",
+      "bytes": 20249,
+      "sha256": "a0e956e5c85e574e2abacadd2dce2a570254c119a01075655702037a577cd613",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/008_a0e956e5c85e574e_37091e40-1fdf-804c-b93b-f1c0160df6df-__000.txt",
+      "text_chars": 1200,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37091e40-1fdf-8057-bd72-f75fa4c9f376-image.png",
+      "bytes": 21915,
+      "sha256": "21d9aeb2c148ca99dc35df22e27013209a731fd54b8cb24fe651f5adcf84cacb",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/009_21d9aeb2c148ca99_37091e40-1fdf-8057-bd72-f75fa4c9f376-image.txt",
+      "text_chars": 387,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 681,
+        "height": 331,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/37091e40-1fdf-8067-b455-dc9a95b67e91-(양식) 프로젝트 활동비 활용계획서_000팀.docx",
+      "bytes": 17475,
+      "sha256": "1866fd55b379127a56fa5777794b3686d7e9aea11f963fdaae65b555e40e49e4",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/010_1866fd55b379127a_37091e40-1fdf-8067-b455-dc9a95b67e91-__000.txt",
+      "text_chars": 1090,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37091e40-1fdf-80a6-8706-f05d2b77d5f5-image.png",
+      "bytes": 68298,
+      "sha256": "430be13db9d77021b75b9d9832543db91679597ebe8a6ead2b68f81311ad16e9",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/011_430be13db9d77021_37091e40-1fdf-80a6-8706-f05d2b77d5f5-image.txt",
+      "text_chars": 781,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 678,
+        "height": 726,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-8014-9889-d2cce7557d52-(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "bytes": 15645,
+      "sha256": "5faba595c82ae8b55739e12d8a3dad7baf853e7fd0c398ced2633c588ac64cb5",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/012_5faba595c82ae8b5_37191e40-1fdf-8014-9889-d2cce7557d52-__000.txt",
+      "text_chars": 700,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-8020-9522-d42473e499de-(양식) 마케팅비 증빙 내역서_000팀.docx",
+      "bytes": 15504,
+      "sha256": "18df64f92ba1a78d2357050553aedf215880155e7b374ce8c883ddee78b97c86",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/013_18df64f92ba1a78d_37191e40-1fdf-8020-9522-d42473e499de-__000.txt",
+      "text_chars": 956,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-8039-a205-fc42f49185cd-(양식) 마케팅비 증빙 내역서_000팀.docx",
+      "bytes": 15504,
+      "sha256": "18df64f92ba1a78d2357050553aedf215880155e7b374ce8c883ddee78b97c86",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/014_18df64f92ba1a78d_37191e40-1fdf-8039-a205-fc42f49185cd-__000.txt",
+      "text_chars": 956,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/013_18df64f92ba1a78d_37191e40-1fdf-8020-9522-d42473e499de-__000.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-804a-8e17-e2a21752a921-(양식) 기타 사용료 증빙 내역서_000팀.docx",
+      "bytes": 15063,
+      "sha256": "48b79fab6cfc7988f099db826ef40239654d8d826472103b07fceec38a8c62a6",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/015_48b79fab6cfc7988_37191e40-1fdf-804a-8e17-e2a21752a921-__000.txt",
+      "text_chars": 298,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-804c-a00f-ead0a63f1f5e-(양식) AI·SW 서비스 이용료 증빙 내역서.docx",
+      "bytes": 17023,
+      "sha256": "55440ba157014f29f4c18a60378b2be3e9669913486cbc1867bb33ff4d613c8e",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/016_55440ba157014f29_37191e40-1fdf-804c-a00f-ead0a63f1f5e-_AI_SW.txt",
+      "text_chars": 764,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-8059-ba8e-c53846b53e96-(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "bytes": 15123,
+      "sha256": "6b066dd49cd35106a69d5b68eb928e8e9afbdeba2fadfc3b2507235c9dc0c39f",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/017_6b066dd49cd35106_37191e40-1fdf-8059-ba8e-c53846b53e96-__000.txt",
+      "text_chars": 156,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-805a-ac86-da508f4422ed-(양식) 재료 구매비 증빙 내역서_000팀.docx",
+      "bytes": 15609,
+      "sha256": "9202289af9f6446ac381159ffeac0d0412cafeb0d03ce1768ec3a403fece4a7d",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/018_9202289af9f6446a_37191e40-1fdf-805a-ac86-da508f4422ed-__000.txt",
+      "text_chars": 876,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-805d-928c-d20dd4380f9d-(양식) 기타 사용료 증빙 내역서_000팀.docx",
+      "bytes": 15063,
+      "sha256": "48b79fab6cfc7988f099db826ef40239654d8d826472103b07fceec38a8c62a6",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/019_48b79fab6cfc7988_37191e40-1fdf-805d-928c-d20dd4380f9d-__000.txt",
+      "text_chars": 298,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/015_48b79fab6cfc7988_37191e40-1fdf-804a-8e17-e2a21752a921-__000.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-805f-90dc-cf1544c1d47f-(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "bytes": 15123,
+      "sha256": "6b066dd49cd35106a69d5b68eb928e8e9afbdeba2fadfc3b2507235c9dc0c39f",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/020_6b066dd49cd35106_37191e40-1fdf-805f-90dc-cf1544c1d47f-__000.txt",
+      "text_chars": 156,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/017_6b066dd49cd35106_37191e40-1fdf-8059-ba8e-c53846b53e96-__000.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-806d-beef-d39554dbc95f-(양식) 마케팅비 증빙 내역서_000팀.docx",
+      "bytes": 15504,
+      "sha256": "18df64f92ba1a78d2357050553aedf215880155e7b374ce8c883ddee78b97c86",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/021_18df64f92ba1a78d_37191e40-1fdf-806d-beef-d39554dbc95f-__000.txt",
+      "text_chars": 956,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/013_18df64f92ba1a78d_37191e40-1fdf-8020-9522-d42473e499de-__000.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-8092-8a67-f436e97fb644-(양식) 비용 지급요청서(전문가 계좌이체)_000팀.docx",
+      "bytes": 33876,
+      "sha256": "6a3752d1640fa095bd1e269a1164d575525d60b868ccc31f124811242c8cbbb0",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/022_6a3752d1640fa095_37191e40-1fdf-8092-8a67-f436e97fb644-__000.txt",
+      "text_chars": 685,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-80b2-96ed-f5e25a70bc8b-(양식) 기자재 임대비 증빙 내역서_000팀.docx",
+      "bytes": 15652,
+      "sha256": "bb21db7d9538723fd5b9f5a5234c5c4a54986843a738887f27266676efb30a24",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/023_bb21db7d9538723f_37191e40-1fdf-80b2-96ed-f5e25a70bc8b-__000.txt",
+      "text_chars": 745,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-80bd-91fd-e4bd8f304bbe-(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "bytes": 15645,
+      "sha256": "5faba595c82ae8b55739e12d8a3dad7baf853e7fd0c398ced2633c588ac64cb5",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/024_5faba595c82ae8b5_37191e40-1fdf-80bd-91fd-e4bd8f304bbe-__000.txt",
+      "text_chars": 700,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/012_5faba595c82ae8b5_37191e40-1fdf-8014-9889-d2cce7557d52-__000.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-80da-a5ef-d69e057f1ace-(양식) 기타 사용료 증빙 내역서_000팀.docx",
+      "bytes": 15063,
+      "sha256": "48b79fab6cfc7988f099db826ef40239654d8d826472103b07fceec38a8c62a6",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/025_48b79fab6cfc7988_37191e40-1fdf-80da-a5ef-d69e057f1ace-__000.txt",
+      "text_chars": 298,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/015_48b79fab6cfc7988_37191e40-1fdf-804a-8e17-e2a21752a921-__000.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-80ee-9128-caebeb5d62a0-(양식) 기자재 임대비 증빙 내역서_000팀.docx",
+      "bytes": 15652,
+      "sha256": "bb21db7d9538723fd5b9f5a5234c5c4a54986843a738887f27266676efb30a24",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/026_bb21db7d9538723f_37191e40-1fdf-80ee-9128-caebeb5d62a0-__000.txt",
+      "text_chars": 745,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/023_bb21db7d9538723f_37191e40-1fdf-80b2-96ed-f5e25a70bc8b-__000.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-80f4-afe0-dc00637169ad-(양식) AI·SW 서비스 이용료 증빙 내역서.docx",
+      "bytes": 17023,
+      "sha256": "55440ba157014f29f4c18a60378b2be3e9669913486cbc1867bb33ff4d613c8e",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/027_55440ba157014f29_37191e40-1fdf-80f4-afe0-dc00637169ad-_AI_SW.txt",
+      "text_chars": 764,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/016_55440ba157014f29_37191e40-1fdf-804c-a00f-ead0a63f1f5e-_AI_SW.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-80f5-a989-cc81949dbd44-(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "bytes": 15123,
+      "sha256": "6b066dd49cd35106a69d5b68eb928e8e9afbdeba2fadfc3b2507235c9dc0c39f",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/028_6b066dd49cd35106_37191e40-1fdf-80f5-a989-cc81949dbd44-__000.txt",
+      "text_chars": 156,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/017_6b066dd49cd35106_37191e40-1fdf-8059-ba8e-c53846b53e96-__000.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37191e40-1fdf-80fe-9609-e4cb2b0b5a59-(참고) 전문가 계약서 양식.docx",
+      "bytes": 23387,
+      "sha256": "7d116d49030835df7fefb9f517c9277b88b772cc06e1e9c717437c40753b7719",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/029_7d116d49030835df_37191e40-1fdf-80fe-9609-e4cb2b0b5a59.txt",
+      "text_chars": 4034,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": null,
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37291e40-1fdf-80bf-b535-ffa45e5e1e02-(양식) 기자재 임대비 증빙 내역서_000팀.docx",
+      "bytes": 15652,
+      "sha256": "bb21db7d9538723fd5b9f5a5234c5c4a54986843a738887f27266676efb30a24",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/030_bb21db7d9538723f_37291e40-1fdf-80bf-b535-ffa45e5e1e02-__000.txt",
+      "text_chars": 745,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/023_bb21db7d9538723f_37191e40-1fdf-80b2-96ed-f5e25a70bc8b-__000.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/37291e40-1fdf-80bf-b931-e8fec80f6ac9-(양식)_비용_지급요청서(세금계산서용)_000팀.docx",
+      "bytes": 15123,
+      "sha256": "6b066dd49cd35106a69d5b68eb928e8e9afbdeba2fadfc3b2507235c9dc0c39f",
+      "extension": ".docx",
+      "extracted_text_file": "extracted/assets/031_6b066dd49cd35106_37291e40-1fdf-80bf-b931-e8fec80f6ac9-______000.txt",
+      "text_chars": 156,
+      "extraction_method": "python-docx paragraphs and tables",
+      "duplicate_of": "extracted/assets/017_6b066dd49cd35106_37191e40-1fdf-8059-ba8e-c53846b53e96-__000.txt",
+      "image_info": null,
+      "error": null
+    },
+    {
+      "source": "assets/3b691e40-1fdf-8395-a2b2-01abb5c0e0d7-노션꾸미기용-2.png",
+      "bytes": 66060,
+      "sha256": "415632d721180ce711189695ce1f667569339ce45d8f0e0587c681e4da522e22",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/032_415632d721180ce7_3b691e40-1fdf-8395-a2b2-01abb5c0e0d7-_-2.txt",
+      "text_chars": 107,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 800,
+        "height": 800,
+        "mode": "RGB"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/4fd91e40-1fdf-82c7-aa4e-01241e9bbc92-111.png",
+      "bytes": 151783,
+      "sha256": "2a1838a9934db26d55ea94c7f74a1e736ca12aa6e05473c8fc86e5f54aed89ad",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/033_2a1838a9934db26d_4fd91e40-1fdf-82c7-aa4e-01241e9bbc92-111.txt",
+      "text_chars": 293,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": "extracted/assets/001_2a1838a9934db26d_10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.txt",
+      "image_info": {
+        "width": 1759,
+        "height": 961,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/5b991e40-1fdf-8339-bfa1-818b79e99df4-노션꾸미기용-1.png",
+      "bytes": 59156,
+      "sha256": "b0f983bd811095619cade6f28beb0b7eb712f82a5913d3a0a5385f20000393a3",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/034_b0f983bd81109561_5b991e40-1fdf-8339-bfa1-818b79e99df4-_-1.txt",
+      "text_chars": 107,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 800,
+        "height": 800,
+        "mode": "RGB"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/5f491e40-1fdf-8364-9e0e-0179ef1f978e-2222222.PNG",
+      "bytes": 30849,
+      "sha256": "2603aa98c9aca63ccf87b886f3aeabea5931fe80286eff9349799d7eca6e7e64",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/035_2603aa98c9aca63c_5f491e40-1fdf-8364-9e0e-0179ef1f978e-2222222.txt",
+      "text_chars": 202,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": "extracted/assets/004_2603aa98c9aca63c_26991e40-1fdf-820e-b7fc-81ee75bbe76d-2222222.txt",
+      "image_info": {
+        "width": 1368,
+        "height": 654,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/65491e40-1fdf-83d6-9b5d-81b567114b50-111.png",
+      "bytes": 151783,
+      "sha256": "2a1838a9934db26d55ea94c7f74a1e736ca12aa6e05473c8fc86e5f54aed89ad",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/036_2a1838a9934db26d_65491e40-1fdf-83d6-9b5d-81b567114b50-111.txt",
+      "text_chars": 293,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": "extracted/assets/001_2a1838a9934db26d_10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.txt",
+      "image_info": {
+        "width": 1759,
+        "height": 961,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/67491e40-1fdf-837b-8a7c-0188880331d4-111.png",
+      "bytes": 151783,
+      "sha256": "2a1838a9934db26d55ea94c7f74a1e736ca12aa6e05473c8fc86e5f54aed89ad",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/037_2a1838a9934db26d_67491e40-1fdf-837b-8a7c-0188880331d4-111.txt",
+      "text_chars": 293,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": "extracted/assets/001_2a1838a9934db26d_10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.txt",
+      "image_info": {
+        "width": 1759,
+        "height": 961,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/68e91e40-1fdf-8338-b91f-0182969b60de-노션꾸미기용-4.png",
+      "bytes": 54916,
+      "sha256": "9fb9e4868b96173678ca7d874d3c662e8edc72f8da701210d268af6575fc2842",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/038_9fb9e4868b961736_68e91e40-1fdf-8338-b91f-0182969b60de-_-4.txt",
+      "text_chars": 107,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 800,
+        "height": 800,
+        "mode": "RGB"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/7a591e40-1fdf-83e8-8eb7-8126cbd8153e-프레젠테이션1.png",
+      "bytes": 101964,
+      "sha256": "4795d63054772c615a67e3a021b613b724bb664ca14064f7528a2be03d336998",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/039_4795d63054772c61_7a591e40-1fdf-83e8-8eb7-8126cbd8153e-_1.txt",
+      "text_chars": 205,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 1280,
+        "height": 720,
+        "mode": "RGB"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/8a191e40-1fdf-836f-b249-0185e8e0e40b-222.PNG",
+      "bytes": 153569,
+      "sha256": "d6b50ad37dac070ebd3e3f6a04a00e76f6b393482c02f40801aaeba58efc854d",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/040_d6b50ad37dac070e_8a191e40-1fdf-836f-b249-0185e8e0e40b-222.txt",
+      "text_chars": 194,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 1820,
+        "height": 719,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/8d891e40-1fdf-8219-88c1-81c8a1dd54fc-111.png",
+      "bytes": 151783,
+      "sha256": "2a1838a9934db26d55ea94c7f74a1e736ca12aa6e05473c8fc86e5f54aed89ad",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/041_2a1838a9934db26d_8d891e40-1fdf-8219-88c1-81c8a1dd54fc-111.txt",
+      "text_chars": 293,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": "extracted/assets/001_2a1838a9934db26d_10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.txt",
+      "image_info": {
+        "width": 1759,
+        "height": 961,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/94391e40-1fdf-824d-8e0f-01dfd19becd2-노션꾸미기용-3.png",
+      "bytes": 67999,
+      "sha256": "241a7317acefe26cc2151900490e5f784d437f7339e8eb1646da96ddb3a67308",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/042_241a7317acefe26c_94391e40-1fdf-824d-8e0f-01dfd19becd2-_-3.txt",
+      "text_chars": 107,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 800,
+        "height": 800,
+        "mode": "RGB"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/a1491e40-1fdf-837d-bafb-814a0f262e74-노션꾸미기용-5.png",
+      "bytes": 63122,
+      "sha256": "24f20a23fcac83cf94b33ec240c03d4382e02e6a3bf05b1faf1fe52ef0912df2",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/043_24f20a23fcac83cf_a1491e40-1fdf-837d-bafb-814a0f262e74-_-5.txt",
+      "text_chars": 107,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 800,
+        "height": 800,
+        "mode": "RGB"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/a6591e40-1fdf-83f7-adb4-014bbd46853c-111.png",
+      "bytes": 151783,
+      "sha256": "2a1838a9934db26d55ea94c7f74a1e736ca12aa6e05473c8fc86e5f54aed89ad",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/044_2a1838a9934db26d_a6591e40-1fdf-83f7-adb4-014bbd46853c-111.txt",
+      "text_chars": 293,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": "extracted/assets/001_2a1838a9934db26d_10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.txt",
+      "image_info": {
+        "width": 1759,
+        "height": 961,
+        "mode": "RGBA"
+      },
+      "error": null
+    },
+    {
+      "source": "assets/edc91e40-1fdf-82d3-96ec-01ed6bf6f88f-Untitled.png",
+      "bytes": 210935,
+      "sha256": "332d831e04f6f63a5c340dd2e80c659a4584a84f87c17eb5e0e74d4798238b98",
+      "extension": ".png",
+      "extracted_text_file": "extracted/assets/045_332d831e04f6f63a_edc91e40-1fdf-82d3-96ec-01ed6bf6f88f-Untitled.txt",
+      "text_chars": 226,
+      "extraction_method": "manual image description based on visual inspection and document context",
+      "duplicate_of": null,
+      "image_info": {
+        "width": 997,
+        "height": 768,
+        "mode": "RGBA"
+      },
+      "error": null
+    }
+  ]
+}

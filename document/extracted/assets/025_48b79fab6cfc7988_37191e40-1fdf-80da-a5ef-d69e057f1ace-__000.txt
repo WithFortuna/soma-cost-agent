@@ -1,0 +1,14 @@
+Source: assets/37191e40-1fdf-80da-a5ef-d69e057f1ace-(양식) 기타 사용료 증빙 내역서_000팀.docx
+Bytes: 15063
+SHA256: 48b79fab6cfc7988f099db826ef40239654d8d826472103b07fceec38a8c62a6
+Extension: .docx
+Extraction method: python-docx paragraphs and tables
+Duplicate of: extracted/assets/015_48b79fab6cfc7988_37191e40-1fdf-804a-8e17-e2a21752a921-__000.txt
+
+--- EXTRACTED TEXT ---
+[TABLE 1]
+기타 사용료 증빙 내역서
+[TABLE 2]
+팀명 |  | 금액(VAT포함) | 
+사용 항목 | ex) 도메인 등록비 | 광고 기간 | ex) 프로젝트 서비스 도메인 운영
+증빙자료 | ㆍ 활용 내역 및 결과를 확인할 수 있는 증빙자료를 첨부 - 증빙자료 별도 첨부 시 ‘별도 첨부’ 문구 기재 | ㆍ 활용 내역 및 결과를 확인할 수 있는 증빙자료를 첨부 - 증빙자료 별도 첨부 시 ‘별도 첨부’ 문구 기재 | ㆍ 활용 내역 및 결과를 확인할 수 있는 증빙자료를 첨부 - 증빙자료 별도 첨부 시 ‘별도 첨부’ 문구 기재

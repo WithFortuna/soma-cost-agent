@@ -1,0 +1,14 @@
+Source: assets/94391e40-1fdf-824d-8e0f-01dfd19becd2-노션꾸미기용-3.png
+Bytes: 67999
+SHA256: 241a7317acefe26cc2151900490e5f784d437f7339e8eb1646da96ddb3a67308
+Extension: .png
+Extraction method: manual image description based on visual inspection and document context
+Duplicate of: 
+Image size: 800x800 RGB
+
+--- EXTRACTED TEXT ---
+이미지 종류: 장식/단계 이미지
+요약: 프로젝트 활동비 지원 절차의 3단계를 구분하기 위한 장식 이미지입니다.
+
+이미지 내 주요 텍스트/의미:
+정책 판단에 필요한 본문 텍스트는 거의 없습니다.

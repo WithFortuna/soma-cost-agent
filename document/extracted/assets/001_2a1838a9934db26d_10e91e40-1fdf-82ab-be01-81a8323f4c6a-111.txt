@@ -1,0 +1,14 @@
+Source: assets/10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.png
+Bytes: 151783
+SHA256: 2a1838a9934db26d55ea94c7f74a1e736ca12aa6e05473c8fc86e5f54aed89ad
+Extension: .png
+Extraction method: manual image description based on visual inspection and document context
+Duplicate of: 
+Image size: 1759x961 RGBA
+
+--- EXTRACTED TEXT ---
+이미지 종류: 화면 캡처
+요약: SW Maestro 홈페이지에서 마이페이지 > 신청/접수 > 프로젝트 활동비 > 글쓰기 경로를 안내하는 화면입니다.
+
+이미지 내 주요 텍스트/의미:
+주요 표시 텍스트: SOFTWARE MAESTRO, 마이페이지, 프로젝트 활동비, 신청/접수, 프로젝트 활동비, Total: 1, 검색어를 입력해주세요, 구분, 제목, 금액(원), 금액($), 상태, 증빙접수, 팀명, 작성자, 등록일, 글쓰기. 예시 행에는 프로젝트 활동비 활용계획서, 프로젝트 활동비 test, 승인, 증빙완료 등이 보입니다.

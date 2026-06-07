@@ -1,0 +1,2176 @@
+{
+  "generatedAt": "2026-06-06T17:40:51.477Z",
+  "source": "https://app.notion.com/p/swmaestromain/2026-c1091e401fdf82aab1d6812565ebe77a",
+  "sourceExportedAt": "2026-06-06T17:39:40.793Z",
+  "rootPageId": "c1091e40-1fdf-82aa-b1d6-812565ebe77a",
+  "files": [
+    "README.md",
+    "00-ai-guide.md",
+    "01-full-source.md",
+    "02-process-and-deadlines.md",
+    "03-board-activity-plan.md",
+    "04-board-support-items.md",
+    "05-board-payment-methods.md",
+    "06-board-evidence-documents.md",
+    "07-attachments.md"
+  ],
+  "recordCounts": {
+    "block": 825,
+    "team": 1,
+    "collection_view": 5,
+    "collection": 4
+  },
+  "loadedPages": [
+    "c1091e40-1fdf-82aa-b1d6-812565ebe77a",
+    "e8c91e40-1fdf-82ca-8f3d-01646b513ae7",
+    "d2691e40-1fdf-82d5-b9a6-015b265aa242",
+    "edf91e40-1fdf-83e2-ab5f-01664a1b186a",
+    "5c791e40-1fdf-82dc-a090-81221ef43a01",
+    "ddd91e40-1fdf-83ee-b7ca-019ac63c1e7c",
+    "ba891e40-1fdf-835b-b676-81730c1a5755",
+    "f7791e40-1fdf-831c-b883-81b3dec7f663",
+    "9dc91e40-1fdf-83ad-862d-81c0652106db",
+    "4fa91e40-1fdf-82fa-98f5-81a5fca5a511",
+    "08491e40-1fdf-8252-bb10-810e11620033",
+    "f7991e40-1fdf-83a9-9084-012f971512fd",
+    "78191e40-1fdf-82ed-a873-01f5364c4649",
+    "37191e40-1fdf-80df-af05-d352e3ebb08d",
+    "a5e91e40-1fdf-8307-9f27-01bf9ff3f138",
+    "0ab91e40-1fdf-8370-aec7-01bdccbdb6ca",
+    "6d191e40-1fdf-8358-925f-816c66a0b138",
+    "7e891e40-1fdf-82b2-bbcd-01e18fd53fe0",
+    "c7491e40-1fdf-8245-8e7e-81663b589aef",
+    "bd091e40-1fdf-837c-8064-81adaee38bfa",
+    "6bd91e40-1fdf-83cb-91fa-011b6d2d9de8",
+    "1c191e40-1fdf-824c-a6fe-814019650c22",
+    "cac91e40-1fdf-83f5-b490-814b4e360dc8"
+  ],
+  "loadedMissingChildBlockRoots": [
+    "50291e40-1fdf-83c6-b129-01867c8ae851",
+    "92d91e40-1fdf-82f9-8e5b-01bfbfaf6543",
+    "85c91e40-1fdf-8229-a44b-81d6ec2d6e38",
+    "37091e40-1fdf-80ff-a31a-cc545df79f72",
+    "37091e40-1fdf-8097-bd8b-c53e6892175e",
+    "cfd91e40-1fdf-823d-9f72-013c1838164d",
+    "f0891e40-1fdf-8248-8b88-819baee5b91d",
+    "03591e40-1fdf-8248-8a98-8171779d1847",
+    "2b691e40-1fdf-8240-8663-810ec65397ea",
+    "f3491e40-1fdf-828a-8b5e-01df5f82dca1",
+    "7a891e40-1fdf-8274-bd1d-816af7bd1302",
+    "e8591e40-1fdf-8288-bf39-81e5a3908313",
+    "a1f91e40-1fdf-8399-a620-019b3fc6ed12",
+    "5af91e40-1fdf-83cf-a185-019b9baf6be6",
+    "fd891e40-1fdf-83d1-9de2-819ec49d9cf5",
+    "04491e40-1fdf-831c-a4ac-01076153639b",
+    "b9491e40-1fdf-835d-a3b1-017de83605a2",
+    "c2691e40-1fdf-82cf-a108-01c23e9bef80",
+    "85b91e40-1fdf-8379-92c6-81a149da96a0",
+    "37191e40-1fdf-8018-ae92-f9a4d21519f3",
+    "37191e40-1fdf-80bb-a517-edb4c984aa14",
+    "37191e40-1fdf-801e-b637-f9e86c22ab41",
+    "37191e40-1fdf-8030-a49e-dd4339b14707",
+    "d5791e40-1fdf-821b-ab22-813bedaba81c",
+    "50991e40-1fdf-8217-9904-8154b3fd8617",
+    "bec91e40-1fdf-83d9-a342-81703524f688",
+    "67191e40-1fdf-82db-bc00-0169bbd3f397",
+    "72691e40-1fdf-832c-bed8-012a858c7772",
+    "88a91e40-1fdf-835b-b50f-8110b6f54222",
+    "61d91e40-1fdf-839e-87d0-01bd66a75b6a",
+    "cdc91e40-1fdf-8255-bb9d-0167d251b928",
+    "03691e40-1fdf-8301-9c5e-016017e92212",
+    "d2491e40-1fdf-8393-8de5-016b323c0ab8",
+    "aa091e40-1fdf-8372-8806-014dd6e5c8b0",
+    "8e691e40-1fdf-83d4-a654-01e2b84301b1",
+    "37191e40-1fdf-8073-8207-ee764ed50725",
+    "37191e40-1fdf-805f-bbd0-ed644a512a04",
+    "37191e40-1fdf-8052-be27-e7f3d51d0be7",
+    "37191e40-1fdf-8072-ba8c-e9376cefb9fd",
+    "37191e40-1fdf-80c8-84ef-ffc842024a7d",
+    "1e691e40-1fdf-8218-a4f4-819731a61be7",
+    "45e91e40-1fdf-8266-b795-819aa6b8b011",
+    "4fc91e40-1fdf-8236-aa92-810474e53dd1",
+    "ab191e40-1fdf-828e-a60c-8108272637a4",
+    "94491e40-1fdf-8238-92de-81ea4892064a",
+    "20c91e40-1fdf-82d6-abba-81841d02fbd5",
+    "a1491e40-1fdf-837a-9395-818155ae0756",
+    "31591e40-1fdf-82a7-8562-813346b2345c",
+    "8d191e40-1fdf-8389-adaf-816f414f7e06",
+    "f9a91e40-1fdf-83c9-b1e0-01472c2e5829",
+    "9dc91e40-1fdf-8351-a08d-01ac1391e430",
+    "b4991e40-1fdf-828a-9819-8122b6da370e",
+    "b9a91e40-1fdf-83fd-b7df-81a89330be16",
+    "2cd91e40-1fdf-82bf-9f18-810d1f34bc75",
+    "f9a91e40-1fdf-83ed-800f-01c428da3a6e",
+    "d6e91e40-1fdf-82e0-8183-017023c7299a",
+    "37191e40-1fdf-80a1-a3d5-d54e89731418",
+    "37191e40-1fdf-80b3-8415-f75236bc1149",
+    "3f291e40-1fdf-8343-984c-01896926190b",
+    "98391e40-1fdf-8328-8d07-01f5b369fd5a",
+    "51d91e40-1fdf-82aa-aa65-01064cb2a6ad",
+    "37191e40-1fdf-800c-95a4-f5a1fd8d60a0",
+    "37191e40-1fdf-802a-8f92-febf39720486",
+    "37191e40-1fdf-80ea-805d-ca26c5271128",
+    "37191e40-1fdf-80f2-b8ef-ee0e0556b480",
+    "37191e40-1fdf-80f5-ba69-fb742c9330d7",
+    "49691e40-1fdf-8302-8000-8191e23012e8",
+    "76791e40-1fdf-8276-8aa5-81e4e37babab",
+    "5f991e40-1fdf-8264-b5c4-01d0a1921b39",
+    "37191e40-1fdf-80ae-9637-f4a0e56f6ee2",
+    "37191e40-1fdf-80b7-8d9c-de10f1b5eed4",
+    "37191e40-1fdf-80b0-81eb-d504cde33b0d",
+    "37191e40-1fdf-80ac-8de6-e83df81378c3",
+    "37191e40-1fdf-80b9-9df3-cc19f524e1c5",
+    "37191e40-1fdf-80a4-9e30-fc86321c967f",
+    "37191e40-1fdf-802b-aae0-ffe650565ec5",
+    "37191e40-1fdf-809f-9eec-d8c742bd602d",
+    "37191e40-1fdf-80b5-9690-c1470ac5645b",
+    "37191e40-1fdf-80dd-88c5-db95a874063b",
+    "37191e40-1fdf-800b-86a2-fe514d7d8701",
+    "37191e40-1fdf-80ff-ad4a-ff65416bd652",
+    "37191e40-1fdf-8064-bda8-d0f323ec8c77",
+    "37191e40-1fdf-80a9-81c1-e712ed9b122e",
+    "37191e40-1fdf-80a1-9df9-f7b053c385e6",
+    "37191e40-1fdf-80d2-90b8-c4ccbd843720",
+    "37191e40-1fdf-807b-89bf-c9ceb858e501",
+    "37191e40-1fdf-80eb-864a-e076c94786cb",
+    "37191e40-1fdf-80b6-aca0-c46d2c69c20f",
+    "37191e40-1fdf-8055-928e-e896cf4e4ee3",
+    "37191e40-1fdf-80e0-bada-c8be02539a67",
+    "37191e40-1fdf-80da-9894-f4786848bcbc",
+    "37191e40-1fdf-806f-a05c-cbe9c3b2855c",
+    "37191e40-1fdf-8069-82e4-fa6b8bfb2772",
+    "37191e40-1fdf-807d-9a46-fa67661e9e53",
+    "37191e40-1fdf-80bd-85d9-e0ad22c0772f",
+    "37191e40-1fdf-80cd-ab7d-d80fc812dc9f",
+    "37191e40-1fdf-8087-8338-f3485f852efe",
+    "37191e40-1fdf-8095-a00d-c699259dcf62",
+    "37191e40-1fdf-80fd-81de-f772ec59dfe2",
+    "37191e40-1fdf-80a8-8686-f64e55c60f16",
+    "37191e40-1fdf-800b-a2de-d660a0cdd541",
+    "37191e40-1fdf-8078-8085-d2d1b2fd5fd8",
+    "37191e40-1fdf-8022-b011-f394bd54ca12",
+    "37191e40-1fdf-80c2-9fa2-f1aa7a3ad19b",
+    "37191e40-1fdf-80ee-8bdc-e574e577f801",
+    "37191e40-1fdf-80a4-95ed-e4c781f17674",
+    "37191e40-1fdf-80d7-8c6a-e62d00a2cf00",
+    "37191e40-1fdf-80f7-b02a-cb47f07d2a10",
+    "37191e40-1fdf-80b2-b0bf-f9303eaaf170",
+    "37191e40-1fdf-8082-88a5-d073959e26c1",
+    "37191e40-1fdf-8096-88e3-ef45b878ec34",
+    "37191e40-1fdf-8027-9fbd-e924786e2ea5"
+  ],
+  "unresolvedContentReferences": [],
+  "queriedViews": [
+    "94991e40-1fdf-8337-bab1-082cb6a100a8",
+    "10791e40-1fdf-821c-aa4b-88dc9bb15b10",
+    "fec91e40-1fdf-8382-9aeb-88438ca3abf2",
+    "f3491e40-1fdf-82d9-a559-08adab9929f6",
+    "0cb91e40-1fdf-8220-b979-08e994fcef3a"
+  ],
+  "boards": [
+    {
+      "collectionName": "활동비 활용계획서",
+      "viewName": "보드 보기",
+      "viewType": "board",
+      "viewId": "94991e40-1fdf-8337-bab1-082cb6a100a8",
+      "rowCount": 4,
+      "groups": [
+        {
+          "label": "활용계획서",
+          "rowCount": 4,
+          "rowIds": [
+            "e8c91e40-1fdf-82ca-8f3d-01646b513ae7",
+            "d2691e40-1fdf-82d5-b9a6-015b265aa242",
+            "edf91e40-1fdf-83e2-ab5f-01664a1b186a",
+            "5c791e40-1fdf-82dc-a090-81221ef43a01"
+          ]
+        }
+      ]
+    },
+    {
+      "collectionName": "활동비 지원 항목",
+      "viewName": "보드 보기",
+      "viewType": "board",
+      "viewId": "10791e40-1fdf-821c-aa4b-88dc9bb15b10",
+      "rowCount": 7,
+      "groups": [
+        {
+          "label": "지원 항목",
+          "rowCount": 7,
+          "rowIds": [
+            "ddd91e40-1fdf-83ee-b7ca-019ac63c1e7c",
+            "ba891e40-1fdf-835b-b676-81730c1a5755",
+            "f7791e40-1fdf-831c-b883-81b3dec7f663",
+            "9dc91e40-1fdf-83ad-862d-81c0652106db",
+            "4fa91e40-1fdf-82fa-98f5-81a5fca5a511",
+            "08491e40-1fdf-8252-bb10-810e11620033",
+            "f7991e40-1fdf-83a9-9084-012f971512fd"
+          ]
+        }
+      ]
+    },
+    {
+      "collectionName": "활동비 지원 방식",
+      "viewName": "보드 보기",
+      "viewType": "board",
+      "viewId": "fec91e40-1fdf-8382-9aeb-88438ca3abf2",
+      "rowCount": 5,
+      "groups": [
+        {
+          "label": "지원 방식",
+          "rowCount": 5,
+          "rowIds": [
+            "78191e40-1fdf-82ed-a873-01f5364c4649",
+            "37191e40-1fdf-80df-af05-d352e3ebb08d",
+            "a5e91e40-1fdf-8307-9f27-01bf9ff3f138",
+            "0ab91e40-1fdf-8370-aec7-01bdccbdb6ca",
+            "6d191e40-1fdf-8358-925f-816c66a0b138"
+          ]
+        }
+      ]
+    },
+    {
+      "collectionName": "활동비 증빙서류",
+      "viewName": "보드 보기",
+      "viewType": "board",
+      "viewId": "f3491e40-1fdf-82d9-a559-08adab9929f6",
+      "rowCount": 6,
+      "groups": [
+        {
+          "label": "증빙서류",
+          "rowCount": 6,
+          "rowIds": [
+            "7e891e40-1fdf-82b2-bbcd-01e18fd53fe0",
+            "c7491e40-1fdf-8245-8e7e-81663b589aef",
+            "bd091e40-1fdf-837c-8064-81adaee38bfa",
+            "6bd91e40-1fdf-83cb-91fa-011b6d2d9de8",
+            "1c191e40-1fdf-824c-a6fe-814019650c22",
+            "cac91e40-1fdf-83f5-b490-814b4e360dc8"
+          ]
+        }
+      ]
+    },
+    {
+      "collectionName": "활동비 지원 항목",
+      "viewName": "보드 보기",
+      "viewType": "board",
+      "viewId": "0cb91e40-1fdf-8220-b979-08e994fcef3a",
+      "rowCount": 7,
+      "groups": [
+        {
+          "label": "지원 항목",
+          "rowCount": 7,
+          "rowIds": [
+            "ddd91e40-1fdf-83ee-b7ca-019ac63c1e7c",
+            "ba891e40-1fdf-835b-b676-81730c1a5755",
+            "f7791e40-1fdf-831c-b883-81b3dec7f663",
+            "9dc91e40-1fdf-83ad-862d-81c0652106db",
+            "4fa91e40-1fdf-82fa-98f5-81a5fca5a511",
+            "08491e40-1fdf-8252-bb10-810e11620033",
+            "f7991e40-1fdf-83a9-9084-012f971512fd"
+          ]
+        }
+      ]
+    }
+  ],
+  "attachments": [
+    {
+      "blockId": "37091e40-1fdf-8057-bd72-f75fa4c9f376",
+      "type": "image",
+      "title": "image.png",
+      "path": "assets/37091e40-1fdf-8057-bd72-f75fa4c9f376-image.png",
+      "bytes": 21915,
+      "source": "attachment:8a29c0c1-c2e4-41a1-bace-deb10d47a1eb:image.png"
+    },
+    {
+      "blockId": "37091e40-1fdf-80a6-8706-f05d2b77d5f5",
+      "type": "image",
+      "title": "image.png",
+      "path": "assets/37091e40-1fdf-80a6-8706-f05d2b77d5f5-image.png",
+      "bytes": 68298,
+      "source": "attachment:6648e922-2afa-4cbb-8d35-4a2afebf5b48:image.png"
+    },
+    {
+      "blockId": "37091e40-1fdf-8024-a20b-fd2e219ac5b9",
+      "type": "file",
+      "title": "AWS 계정 생성 및 통합빌링 가이드.pdf",
+      "path": "assets/37091e40-1fdf-8024-a20b-fd2e219ac5b9-AWS 계정 생성 및 통합빌링 가이드.pdf",
+      "bytes": 1796231,
+      "source": "attachment:751bfda0-9415-468b-b3a5-9173ce914c43:AWS_계정_생성_및_통합빌링_가이드.pdf"
+    },
+    {
+      "blockId": "5b991e40-1fdf-8339-bfa1-818b79e99df4",
+      "type": "image",
+      "title": "노션꾸미기용-1.png",
+      "path": "assets/5b991e40-1fdf-8339-bfa1-818b79e99df4-노션꾸미기용-1.png",
+      "bytes": 59156,
+      "source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f5cb590b-3b44-443f-9db1-4ef43fccc95c/%EB%85%B8%EC%85%98%EA%BE%B8%EB%AF%B8%EA%B8%B0%EC%9A%A9-1.png"
+    },
+    {
+      "blockId": "3b691e40-1fdf-8395-a2b2-01abb5c0e0d7",
+      "type": "image",
+      "title": "노션꾸미기용-2.png",
+      "path": "assets/3b691e40-1fdf-8395-a2b2-01abb5c0e0d7-노션꾸미기용-2.png",
+      "bytes": 66060,
+      "source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7973c17a-7064-48fd-883e-26ac3ebeae1c/%EB%85%B8%EC%85%98%EA%BE%B8%EB%AF%B8%EA%B8%B0%EC%9A%A9-2.png"
+    },
+    {
+      "blockId": "94391e40-1fdf-824d-8e0f-01dfd19becd2",
+      "type": "image",
+      "title": "노션꾸미기용-3.png",
+      "path": "assets/94391e40-1fdf-824d-8e0f-01dfd19becd2-노션꾸미기용-3.png",
+      "bytes": 67999,
+      "source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c27bc3c9-84e9-4e09-b72b-a0b5740ae37b/%EB%85%B8%EC%85%98%EA%BE%B8%EB%AF%B8%EA%B8%B0%EC%9A%A9-3.png"
+    },
+    {
+      "blockId": "68e91e40-1fdf-8338-b91f-0182969b60de",
+      "type": "image",
+      "title": "노션꾸미기용-4.png",
+      "path": "assets/68e91e40-1fdf-8338-b91f-0182969b60de-노션꾸미기용-4.png",
+      "bytes": 54916,
+      "source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8c4ca1e0-d32f-49d9-913d-5f1d02d20729/%EB%85%B8%EC%85%98%EA%BE%B8%EB%AF%B8%EA%B8%B0%EC%9A%A9-4.png"
+    },
+    {
+      "blockId": "a1491e40-1fdf-837d-bafb-814a0f262e74",
+      "type": "image",
+      "title": "노션꾸미기용-5.png",
+      "path": "assets/a1491e40-1fdf-837d-bafb-814a0f262e74-노션꾸미기용-5.png",
+      "bytes": 63122,
+      "source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e47ec5cd-e571-48c4-9d99-c92ff47b087e/%EB%85%B8%EC%85%98%EA%BE%B8%EB%AF%B8%EA%B8%B0%EC%9A%A9-5.png"
+    },
+    {
+      "blockId": "7a591e40-1fdf-83e8-8eb7-8126cbd8153e",
+      "type": "image",
+      "title": "프레젠테이션1.png",
+      "path": "assets/7a591e40-1fdf-83e8-8eb7-8126cbd8153e-프레젠테이션1.png",
+      "bytes": 101964,
+      "source": "attachment:11e2385e-f1b3-4d48-907d-593118330122:프레젠테이션1.png"
+    },
+    {
+      "blockId": "37091e40-1fdf-8067-b455-dc9a95b67e91",
+      "type": "file",
+      "title": "(양식) 프로젝트 활동비 활용계획서_000팀.docx",
+      "path": "assets/37091e40-1fdf-8067-b455-dc9a95b67e91-(양식) 프로젝트 활동비 활용계획서_000팀.docx",
+      "bytes": 17475,
+      "source": "attachment:a064bb00-3e33-4e85-8776-c3e2f6a4a8e8:(양식)_프로젝트_활동비_활용계획서_000팀.docx"
+    },
+    {
+      "blockId": "26091e40-1fdf-836f-b177-813f830e3097",
+      "type": "image",
+      "title": "111.png",
+      "path": "assets/26091e40-1fdf-836f-b177-813f830e3097-111.png",
+      "bytes": 151783,
+      "source": "attachment:3b2b9225-2c20-4ccf-bbab-cc2f2be9b745:111.png"
+    },
+    {
+      "blockId": "37091e40-1fdf-804c-b4c7-f623743e8a54",
+      "type": "file",
+      "title": "AWS 계정 생성 및 통합빌링 가이드.pdf",
+      "path": "assets/37091e40-1fdf-804c-b4c7-f623743e8a54-AWS 계정 생성 및 통합빌링 가이드.pdf",
+      "bytes": 1796231,
+      "source": "attachment:821c21f0-461e-4c41-8f36-df5003227815:AWS_계정_생성_및_통합빌링_가이드.pdf"
+    },
+    {
+      "blockId": "37091e40-1fdf-804c-b93b-f1c0160df6df",
+      "type": "file",
+      "title": "(양식) 클라우드 서비스 사용 동의서_000팀.docx",
+      "path": "assets/37091e40-1fdf-804c-b93b-f1c0160df6df-(양식) 클라우드 서비스 사용 동의서_000팀.docx",
+      "bytes": 20249,
+      "source": "attachment:ee0343cd-b755-42ac-a5f7-7b19db7c4669:(양식)_클라우드_서비스_사용_동의서_000팀.docx"
+    },
+    {
+      "blockId": "a6591e40-1fdf-83f7-adb4-014bbd46853c",
+      "type": "image",
+      "title": "111.png",
+      "path": "assets/a6591e40-1fdf-83f7-adb4-014bbd46853c-111.png",
+      "bytes": 151783,
+      "source": "attachment:a79cf931-6757-45e7-a050-b4adfd1c6223:111.png"
+    },
+    {
+      "blockId": "8a191e40-1fdf-836f-b249-0185e8e0e40b",
+      "type": "image",
+      "title": "222.PNG",
+      "path": "assets/8a191e40-1fdf-836f-b249-0185e8e0e40b-222.PNG",
+      "bytes": 153569,
+      "source": "attachment:8052a568-f138-4be2-8550-d71403113914:222.png"
+    },
+    {
+      "blockId": "1f991e40-1fdf-83c7-8bcb-01e5f43e2c89",
+      "type": "image",
+      "title": "111.png",
+      "path": "assets/1f991e40-1fdf-83c7-8bcb-01e5f43e2c89-111.png",
+      "bytes": 151783,
+      "source": "attachment:a79cf931-6757-45e7-a050-b4adfd1c6223:111.png"
+    },
+    {
+      "blockId": "35f91e40-1fdf-8026-a58a-c9372e9031ec",
+      "type": "file",
+      "title": "(양식) 구매대행 신청서_팀명_00.00.xlsx",
+      "path": "assets/35f91e40-1fdf-8026-a58a-c9372e9031ec-(양식) 구매대행 신청서_팀명_00.00.xlsx",
+      "bytes": 95101,
+      "source": "attachment:50d70332-3c2f-48e1-a936-6fd4ff39a675:(양식)_구매대행_신청서_팀명_00.00.xlsx"
+    },
+    {
+      "blockId": "5f491e40-1fdf-8364-9e0e-0179ef1f978e",
+      "type": "image",
+      "title": "2222222.PNG",
+      "path": "assets/5f491e40-1fdf-8364-9e0e-0179ef1f978e-2222222.PNG",
+      "bytes": 30849,
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ccbd650f-9055-41eb-b9c0-6238b333a223/77b0a342-25ef-4340-9967-43e97baf25d4/2222222.png"
+    },
+    {
+      "blockId": "4fd91e40-1fdf-82c7-aa4e-01241e9bbc92",
+      "type": "image",
+      "title": "111.png",
+      "path": "assets/4fd91e40-1fdf-82c7-aa4e-01241e9bbc92-111.png",
+      "bytes": 151783,
+      "source": "attachment:a79cf931-6757-45e7-a050-b4adfd1c6223:111.png"
+    },
+    {
+      "blockId": "26991e40-1fdf-820e-b7fc-81ee75bbe76d",
+      "type": "image",
+      "title": "2222222.PNG",
+      "path": "assets/26991e40-1fdf-820e-b7fc-81ee75bbe76d-2222222.PNG",
+      "bytes": 30849,
+      "source": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ccbd650f-9055-41eb-b9c0-6238b333a223/9363e6fc-213c-4ba3-b4e2-e0c1ba3d8db3/2222222.png"
+    },
+    {
+      "blockId": "65491e40-1fdf-83d6-9b5d-81b567114b50",
+      "type": "image",
+      "title": "111.png",
+      "path": "assets/65491e40-1fdf-83d6-9b5d-81b567114b50-111.png",
+      "bytes": 151783,
+      "source": "attachment:a79cf931-6757-45e7-a050-b4adfd1c6223:111.png"
+    },
+    {
+      "blockId": "37191e40-1fdf-80fe-9609-e4cb2b0b5a59",
+      "type": "file",
+      "title": "(참고) 전문가 계약서 양식.docx",
+      "path": "assets/37191e40-1fdf-80fe-9609-e4cb2b0b5a59-(참고) 전문가 계약서 양식.docx",
+      "bytes": 23387,
+      "source": "attachment:e85512d5-c1b5-4683-ac23-0c47d336d19d:(참고)_전문가_계약서_양식.docx"
+    },
+    {
+      "blockId": "8d891e40-1fdf-8219-88c1-81c8a1dd54fc",
+      "type": "image",
+      "title": "111.png",
+      "path": "assets/8d891e40-1fdf-8219-88c1-81c8a1dd54fc-111.png",
+      "bytes": 151783,
+      "source": "attachment:a79cf931-6757-45e7-a050-b4adfd1c6223:111.png"
+    },
+    {
+      "blockId": "67491e40-1fdf-837b-8a7c-0188880331d4",
+      "type": "image",
+      "title": "111.png",
+      "path": "assets/67491e40-1fdf-837b-8a7c-0188880331d4-111.png",
+      "bytes": 151783,
+      "source": "attachment:a79cf931-6757-45e7-a050-b4adfd1c6223:111.png"
+    },
+    {
+      "blockId": "10e91e40-1fdf-82ab-be01-81a8323f4c6a",
+      "type": "image",
+      "title": "111.png",
+      "path": "assets/10e91e40-1fdf-82ab-be01-81a8323f4c6a-111.png",
+      "bytes": 151783,
+      "source": "attachment:a79cf931-6757-45e7-a050-b4adfd1c6223:111.png"
+    },
+    {
+      "blockId": "37191e40-1fdf-804c-a00f-ead0a63f1f5e",
+      "type": "file",
+      "title": "(양식) AI·SW 서비스 이용료 증빙 내역서.docx",
+      "path": "assets/37191e40-1fdf-804c-a00f-ead0a63f1f5e-(양식) AI·SW 서비스 이용료 증빙 내역서.docx",
+      "bytes": 17023,
+      "source": "attachment:053a9339-fa0d-4671-9c76-2d0b3428d38f:(양식)_AISW_서비스_이용료_증빙_내역서.docx"
+    },
+    {
+      "blockId": "edc91e40-1fdf-82d3-96ec-01ed6bf6f88f",
+      "type": "image",
+      "title": "Untitled.png",
+      "path": "assets/edc91e40-1fdf-82d3-96ec-01ed6bf6f88f-Untitled.png",
+      "bytes": 210935,
+      "source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6e85011f-c7a5-4b70-9dbd-c07b8aee18c8/Untitled.png"
+    },
+    {
+      "blockId": "37191e40-1fdf-8014-9889-d2cce7557d52",
+      "type": "file",
+      "title": "(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-8014-9889-d2cce7557d52-(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "bytes": 15645,
+      "source": "attachment:ca549088-4a98-4b49-933a-67d5fa7a3a5d:(양식)_전문가_활용비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-8092-8a67-f436e97fb644",
+      "type": "file",
+      "title": "(양식) 비용 지급요청서(전문가 계좌이체)_000팀.docx",
+      "path": "assets/37191e40-1fdf-8092-8a67-f436e97fb644-(양식) 비용 지급요청서(전문가 계좌이체)_000팀.docx",
+      "bytes": 33876,
+      "source": "attachment:dd00e27b-7041-4360-8d41-b1c13e9fd8fe:(양식)_비용_지급요청서(전문가_계좌이체)_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-80ee-9128-caebeb5d62a0",
+      "type": "file",
+      "title": "(양식) 기자재 임대비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-80ee-9128-caebeb5d62a0-(양식) 기자재 임대비 증빙 내역서_000팀.docx",
+      "bytes": 15652,
+      "source": "attachment:f12ceee6-a234-4d86-8e2e-f24c0f2752c2:(양식)_기자재_임대비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-80bd-91fd-e4bd8f304bbe",
+      "type": "file",
+      "title": "(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-80bd-91fd-e4bd8f304bbe-(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "bytes": 15645,
+      "source": "attachment:91e3e933-25ad-4d5a-8ac9-c1d8676f16ff:(양식)_전문가_활용비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-806d-beef-d39554dbc95f",
+      "type": "file",
+      "title": "(양식) 마케팅비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-806d-beef-d39554dbc95f-(양식) 마케팅비 증빙 내역서_000팀.docx",
+      "bytes": 15504,
+      "source": "attachment:afc438a3-603d-4a74-aa09-36a37eb3bf01:(양식)_마케팅비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-805d-928c-d20dd4380f9d",
+      "type": "file",
+      "title": "(양식) 기타 사용료 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-805d-928c-d20dd4380f9d-(양식) 기타 사용료 증빙 내역서_000팀.docx",
+      "bytes": 15063,
+      "source": "attachment:6645e9a0-8571-47fd-bc3f-a0aecb5e68a3:(양식)_기타_사용료_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-805f-90dc-cf1544c1d47f",
+      "type": "file",
+      "title": "(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "path": "assets/37191e40-1fdf-805f-90dc-cf1544c1d47f-(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "bytes": 15123,
+      "source": "attachment:f0b8adfc-06e5-458f-8a34-cc8eda425cc3:(양식)_비용_지급요청서(세금계산서용)_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-805a-ac86-da508f4422ed",
+      "type": "file",
+      "title": "(양식) 재료 구매비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-805a-ac86-da508f4422ed-(양식) 재료 구매비 증빙 내역서_000팀.docx",
+      "bytes": 15609,
+      "source": "attachment:d912b12b-b11c-4d7e-8e6f-abc03c64a010:(양식)_재료_구매비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37291e40-1fdf-80bf-b535-ffa45e5e1e02",
+      "type": "file",
+      "title": "(양식) 기자재 임대비 증빙 내역서_000팀.docx",
+      "path": "assets/37291e40-1fdf-80bf-b535-ffa45e5e1e02-(양식) 기자재 임대비 증빙 내역서_000팀.docx",
+      "bytes": 15652,
+      "source": "attachment:c73ea67c-cfdf-4137-bdee-4bfceddc0953:(양식)_기자재_임대비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-80b2-96ed-f5e25a70bc8b",
+      "type": "file",
+      "title": "(양식) 기자재 임대비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-80b2-96ed-f5e25a70bc8b-(양식) 기자재 임대비 증빙 내역서_000팀.docx",
+      "bytes": 15652,
+      "source": "attachment:c73ea67c-cfdf-4137-bdee-4bfceddc0953:(양식)_기자재_임대비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-80f5-a989-cc81949dbd44",
+      "type": "file",
+      "title": "(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "path": "assets/37191e40-1fdf-80f5-a989-cc81949dbd44-(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "bytes": 15123,
+      "source": "attachment:1ec65eeb-bd01-449b-b6c5-f02d9c10d648:(양식)_비용_지급요청서(세금계산서용)_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-80f4-afe0-dc00637169ad",
+      "type": "file",
+      "title": "(양식) AI·SW 서비스 이용료 증빙 내역서.docx",
+      "path": "assets/37191e40-1fdf-80f4-afe0-dc00637169ad-(양식) AI·SW 서비스 이용료 증빙 내역서.docx",
+      "bytes": 17023,
+      "source": "attachment:180bdeef-dbfb-40da-a771-8f8ee8265dd8:(양식)_AISW_서비스_이용료_증빙_내역서.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-8039-a205-fc42f49185cd",
+      "type": "file",
+      "title": "(양식) 마케팅비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-8039-a205-fc42f49185cd-(양식) 마케팅비 증빙 내역서_000팀.docx",
+      "bytes": 15504,
+      "source": "attachment:4af818bb-8d9f-4781-a29b-9b2a89d06ab4:(양식)_마케팅비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-8020-9522-d42473e499de",
+      "type": "file",
+      "title": "(양식) 마케팅비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-8020-9522-d42473e499de-(양식) 마케팅비 증빙 내역서_000팀.docx",
+      "bytes": 15504,
+      "source": "attachment:4af818bb-8d9f-4781-a29b-9b2a89d06ab4:(양식)_마케팅비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37291e40-1fdf-80bf-b931-e8fec80f6ac9",
+      "type": "file",
+      "title": "(양식)_비용_지급요청서(세금계산서용)_000팀.docx",
+      "path": "assets/37291e40-1fdf-80bf-b931-e8fec80f6ac9-(양식)_비용_지급요청서(세금계산서용)_000팀.docx",
+      "bytes": 15123,
+      "source": "attachment:229b129c-fbf9-40dd-9d0c-11a738172931:(양식)_비용_지급요청서(세금계산서용)_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-80da-a5ef-d69e057f1ace",
+      "type": "file",
+      "title": "(양식) 기타 사용료 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-80da-a5ef-d69e057f1ace-(양식) 기타 사용료 증빙 내역서_000팀.docx",
+      "bytes": 15063,
+      "source": "attachment:473225ac-1183-4c5d-ad01-a38a0964ef09:(양식)_기타_사용료_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-804a-8e17-e2a21752a921",
+      "type": "file",
+      "title": "(양식) 기타 사용료 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-804a-8e17-e2a21752a921-(양식) 기타 사용료 증빙 내역서_000팀.docx",
+      "bytes": 15063,
+      "source": "attachment:473225ac-1183-4c5d-ad01-a38a0964ef09:(양식)_기타_사용료_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-8059-ba8e-c53846b53e96",
+      "type": "file",
+      "title": "(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "path": "assets/37191e40-1fdf-8059-ba8e-c53846b53e96-(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "bytes": 15123,
+      "source": "attachment:e72bcad7-5a01-4622-93c0-30938b1cc74e:(양식)_비용_지급요청서(세금계산서용)_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-80ae-9637-f4a0e56f6ee2",
+      "type": "file",
+      "title": "(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-80ae-9637-f4a0e56f6ee2-(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "bytes": 15645,
+      "source": "attachment:9db90b57-20e4-40da-897c-bf64da576f8a:(양식)_전문가_활용비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-80b0-81eb-d504cde33b0d",
+      "type": "file",
+      "title": "(양식) 비용 지급요청서(전문가 계좌이체)_000팀.docx",
+      "path": "assets/37191e40-1fdf-80b0-81eb-d504cde33b0d-(양식) 비용 지급요청서(전문가 계좌이체)_000팀.docx",
+      "bytes": 33876,
+      "source": "attachment:1737e8b8-36b3-47ad-9981-3b7cb2afcf07:(양식)_비용_지급요청서(전문가_계좌이체)_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-80a4-9e30-fc86321c967f",
+      "type": "file",
+      "title": "(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-80a4-9e30-fc86321c967f-(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "bytes": 15645,
+      "source": "attachment:c357fbca-1728-4e53-b532-104084e0b33c:(양식)_전문가_활용비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-809f-9eec-d8c742bd602d",
+      "type": "file",
+      "title": "(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "path": "assets/37191e40-1fdf-809f-9eec-d8c742bd602d-(양식) 전문가 활용비 증빙 내역서_000팀.docx",
+      "bytes": 15645,
+      "source": "attachment:9db90b57-20e4-40da-897c-bf64da576f8a:(양식)_전문가_활용비_증빙_내역서_000팀.docx"
+    },
+    {
+      "blockId": "37191e40-1fdf-80dd-88c5-db95a874063b",
+      "type": "file",
+      "title": "(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "path": "assets/37191e40-1fdf-80dd-88c5-db95a874063b-(양식) 비용 지급요청서(세금계산서용)_000팀.docx",
+      "bytes": 15123,
+      "source": "attachment:e72bcad7-5a01-4622-93c0-30938b1cc74e:(양식)_비용_지급요청서(세금계산서용)_000팀.docx"
+    }
+  ],
+  "sections": [
+    {
+      "id": "001-프로젝트-활동비-지원-안내2026년",
+      "heading": "프로젝트 활동비 지원 안내(2026년)",
+      "level": 1,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)"
+      ],
+      "lineStart": 1,
+      "lineEnd": 2050,
+      "charLength": 58376
+    },
+    {
+      "id": "002-목차",
+      "heading": "📑목차",
+      "level": 2,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "📑목차"
+      ],
+      "lineStart": 38,
+      "lineEnd": 41,
+      "charLength": 28
+    },
+    {
+      "id": "003-AWS-클라우드-서비스-이용-사전-설문조사필수",
+      "heading": "■ AWS 클라우드 서비스 이용 사전 설문조사(필수!!)",
+      "level": 2,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ AWS 클라우드 서비스 이용 사전 설문조사(필수!!)"
+      ],
+      "lineStart": 42,
+      "lineEnd": 68,
+      "charLength": 1023
+    },
+    {
+      "id": "004-프로젝트-활동비-지원-내용",
+      "heading": "■ 프로젝트 활동비 지원 내용",
+      "level": 2,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 내용"
+      ],
+      "lineStart": 69,
+      "lineEnd": 86,
+      "charLength": 380
+    },
+    {
+      "id": "005-프로젝트-활동비-지원-절차",
+      "heading": "■ 프로젝트 활동비 지원 절차",
+      "level": 2,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차"
+      ],
+      "lineStart": 87,
+      "lineEnd": 2050,
+      "charLength": 55687
+    },
+    {
+      "id": "006-1단계-활용계획서-제출",
+      "heading": "1단계 : 활용계획서 제출",
+      "level": 5,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "1단계 : 활용계획서 제출"
+      ],
+      "lineStart": 91,
+      "lineEnd": 99,
+      "charLength": 234
+    },
+    {
+      "id": "007-Board-활동비-활용계획서",
+      "heading": "Board: 활동비 활용계획서",
+      "level": 4,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서"
+      ],
+      "lineStart": 100,
+      "lineEnd": 798,
+      "charLength": 18281
+    },
+    {
+      "id": "008-Group-활용계획서",
+      "heading": "Group: 활용계획서",
+      "level": 5,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서"
+      ],
+      "lineStart": 105,
+      "lineEnd": 788,
+      "charLength": 17935
+    },
+    {
+      "id": "009-활용계획서-작성",
+      "heading": "활용계획서 작성",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "활용계획서 작성"
+      ],
+      "lineStart": 107,
+      "lineEnd": 132,
+      "charLength": 922
+    },
+    {
+      "id": "010-Board-활동비-지원-항목",
+      "heading": "Board: 활동비 지원 항목",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "Board: 활동비 지원 항목"
+      ],
+      "lineStart": 133,
+      "lineEnd": 137,
+      "charLength": 48
+    },
+    {
+      "id": "011-Group-지원-항목",
+      "heading": "Group: 지원 항목",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "Group: 지원 항목"
+      ],
+      "lineStart": 138,
+      "lineEnd": 139,
+      "charLength": 19
+    },
+    {
+      "id": "012-클라우드-서비스-이용료",
+      "heading": "클라우드 서비스 이용료",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "클라우드 서비스 이용료"
+      ],
+      "lineStart": 140,
+      "lineEnd": 167,
+      "charLength": 977
+    },
+    {
+      "id": "013-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 168,
+      "lineEnd": 206,
+      "charLength": 1050
+    },
+    {
+      "id": "014-통합-빌링-기능-추후-안내-예정",
+      "heading": "※ 통합 빌링 기능 추후 안내 예정",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "※ 통합 빌링 기능 추후 안내 예정"
+      ],
+      "lineStart": 207,
+      "lineEnd": 208,
+      "charLength": 30
+    },
+    {
+      "id": "015-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "※ 유의사항"
+      ],
+      "lineStart": 209,
+      "lineEnd": 217,
+      "charLength": 187
+    },
+    {
+      "id": "016-재료-구매비",
+      "heading": "재료 구매비",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "재료 구매비"
+      ],
+      "lineStart": 218,
+      "lineEnd": 272,
+      "charLength": 996
+    },
+    {
+      "id": "017-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 273,
+      "lineEnd": 346,
+      "charLength": 2296
+    },
+    {
+      "id": "018-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "※ 유의사항"
+      ],
+      "lineStart": 347,
+      "lineEnd": 356,
+      "charLength": 236
+    },
+    {
+      "id": "019-기자재-임대비",
+      "heading": "기자재 임대비",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "기자재 임대비"
+      ],
+      "lineStart": 357,
+      "lineEnd": 364,
+      "charLength": 97
+    },
+    {
+      "id": "020-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 365,
+      "lineEnd": 401,
+      "charLength": 910
+    },
+    {
+      "id": "021-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "※ 유의사항"
+      ],
+      "lineStart": 402,
+      "lineEnd": 408,
+      "charLength": 134
+    },
+    {
+      "id": "022-AI·SW-서비스-이용료",
+      "heading": "AI·SW 서비스 이용료",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "AI·SW 서비스 이용료"
+      ],
+      "lineStart": 409,
+      "lineEnd": 445,
+      "charLength": 1031
+    },
+    {
+      "id": "023-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 446,
+      "lineEnd": 478,
+      "charLength": 820
+    },
+    {
+      "id": "024-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "※ 유의사항"
+      ],
+      "lineStart": 479,
+      "lineEnd": 493,
+      "charLength": 618
+    },
+    {
+      "id": "025-전문가-활용비디자인-제작비-포함",
+      "heading": "전문가 활용비(디자인 제작비 포함)",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "전문가 활용비(디자인 제작비 포함)"
+      ],
+      "lineStart": 494,
+      "lineEnd": 512,
+      "charLength": 854
+    },
+    {
+      "id": "026-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 513,
+      "lineEnd": 560,
+      "charLength": 1365
+    },
+    {
+      "id": "027-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "※ 유의사항"
+      ],
+      "lineStart": 561,
+      "lineEnd": 575,
+      "charLength": 464
+    },
+    {
+      "id": "028-마케팅비",
+      "heading": "마케팅비",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "마케팅비"
+      ],
+      "lineStart": 576,
+      "lineEnd": 590,
+      "charLength": 381
+    },
+    {
+      "id": "029-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 591,
+      "lineEnd": 623,
+      "charLength": 836
+    },
+    {
+      "id": "030-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "※ 유의사항"
+      ],
+      "lineStart": 624,
+      "lineEnd": 628,
+      "charLength": 135
+    },
+    {
+      "id": "031-기타-사용료",
+      "heading": "기타 사용료",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "기타 사용료"
+      ],
+      "lineStart": 629,
+      "lineEnd": 668,
+      "charLength": 506
+    },
+    {
+      "id": "032-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 669,
+      "lineEnd": 702,
+      "charLength": 681
+    },
+    {
+      "id": "033-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "※ 유의사항"
+      ],
+      "lineStart": 703,
+      "lineEnd": 713,
+      "charLength": 349
+    },
+    {
+      "id": "034-활용계획서-작성-시-유의사항",
+      "heading": "★ 활용계획서 작성 시 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "★ 활용계획서 작성 시 유의사항"
+      ],
+      "lineStart": 714,
+      "lineEnd": 726,
+      "charLength": 572
+    },
+    {
+      "id": "035-활용계획서-제출",
+      "heading": "활용계획서 제출",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "활용계획서 제출"
+      ],
+      "lineStart": 727,
+      "lineEnd": 754,
+      "charLength": 509
+    },
+    {
+      "id": "036-담당-멘토-의견-작성",
+      "heading": "담당 멘토 의견 작성",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "담당 멘토 의견 작성"
+      ],
+      "lineStart": 755,
+      "lineEnd": 769,
+      "charLength": 408
+    },
+    {
+      "id": "037-사무국-승인",
+      "heading": "사무국 승인",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "Group: 활용계획서",
+        "사무국 승인"
+      ],
+      "lineStart": 770,
+      "lineEnd": 788,
+      "charLength": 436
+    },
+    {
+      "id": "038-2단계-사용-신청서-제출",
+      "heading": "2단계 : 사용 신청서 제출",
+      "level": 5,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 활용계획서",
+        "2단계 : 사용 신청서 제출"
+      ],
+      "lineStart": 789,
+      "lineEnd": 798,
+      "charLength": 296
+    },
+    {
+      "id": "039-Board-활동비-지원-항목",
+      "heading": "Board: 활동비 지원 항목",
+      "level": 4,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목"
+      ],
+      "lineStart": 799,
+      "lineEnd": 1433,
+      "charLength": 16378
+    },
+    {
+      "id": "040-Group-지원-항목",
+      "heading": "Group: 지원 항목",
+      "level": 5,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목"
+      ],
+      "lineStart": 804,
+      "lineEnd": 1383,
+      "charLength": 15138
+    },
+    {
+      "id": "041-클라우드-서비스-이용료",
+      "heading": "클라우드 서비스 이용료",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "클라우드 서비스 이용료"
+      ],
+      "lineStart": 806,
+      "lineEnd": 833,
+      "charLength": 977
+    },
+    {
+      "id": "042-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 834,
+      "lineEnd": 872,
+      "charLength": 1050
+    },
+    {
+      "id": "043-통합-빌링-기능-추후-안내-예정",
+      "heading": "※ 통합 빌링 기능 추후 안내 예정",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "※ 통합 빌링 기능 추후 안내 예정"
+      ],
+      "lineStart": 873,
+      "lineEnd": 874,
+      "charLength": 30
+    },
+    {
+      "id": "044-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "※ 유의사항"
+      ],
+      "lineStart": 875,
+      "lineEnd": 883,
+      "charLength": 187
+    },
+    {
+      "id": "045-재료-구매비",
+      "heading": "재료 구매비",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "재료 구매비"
+      ],
+      "lineStart": 884,
+      "lineEnd": 938,
+      "charLength": 996
+    },
+    {
+      "id": "046-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 939,
+      "lineEnd": 1012,
+      "charLength": 2296
+    },
+    {
+      "id": "047-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "※ 유의사항"
+      ],
+      "lineStart": 1013,
+      "lineEnd": 1022,
+      "charLength": 236
+    },
+    {
+      "id": "048-기자재-임대비",
+      "heading": "기자재 임대비",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "기자재 임대비"
+      ],
+      "lineStart": 1023,
+      "lineEnd": 1030,
+      "charLength": 97
+    },
+    {
+      "id": "049-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 1031,
+      "lineEnd": 1067,
+      "charLength": 910
+    },
+    {
+      "id": "050-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "※ 유의사항"
+      ],
+      "lineStart": 1068,
+      "lineEnd": 1074,
+      "charLength": 134
+    },
+    {
+      "id": "051-AI·SW-서비스-이용료",
+      "heading": "AI·SW 서비스 이용료",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "AI·SW 서비스 이용료"
+      ],
+      "lineStart": 1075,
+      "lineEnd": 1111,
+      "charLength": 1031
+    },
+    {
+      "id": "052-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 1112,
+      "lineEnd": 1144,
+      "charLength": 820
+    },
+    {
+      "id": "053-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "※ 유의사항"
+      ],
+      "lineStart": 1145,
+      "lineEnd": 1159,
+      "charLength": 618
+    },
+    {
+      "id": "054-전문가-활용비디자인-제작비-포함",
+      "heading": "전문가 활용비(디자인 제작비 포함)",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "전문가 활용비(디자인 제작비 포함)"
+      ],
+      "lineStart": 1160,
+      "lineEnd": 1178,
+      "charLength": 854
+    },
+    {
+      "id": "055-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 1179,
+      "lineEnd": 1226,
+      "charLength": 1365
+    },
+    {
+      "id": "056-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "※ 유의사항"
+      ],
+      "lineStart": 1227,
+      "lineEnd": 1241,
+      "charLength": 464
+    },
+    {
+      "id": "057-마케팅비",
+      "heading": "마케팅비",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "마케팅비"
+      ],
+      "lineStart": 1242,
+      "lineEnd": 1256,
+      "charLength": 381
+    },
+    {
+      "id": "058-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 1257,
+      "lineEnd": 1289,
+      "charLength": 836
+    },
+    {
+      "id": "059-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "※ 유의사항"
+      ],
+      "lineStart": 1290,
+      "lineEnd": 1294,
+      "charLength": 135
+    },
+    {
+      "id": "060-기타-사용료",
+      "heading": "기타 사용료",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "기타 사용료"
+      ],
+      "lineStart": 1295,
+      "lineEnd": 1334,
+      "charLength": 506
+    },
+    {
+      "id": "061-신청-방법",
+      "heading": "▷ 신청 방법",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "▷ 신청 방법"
+      ],
+      "lineStart": 1335,
+      "lineEnd": 1368,
+      "charLength": 681
+    },
+    {
+      "id": "062-유의사항",
+      "heading": "※ 유의사항",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "Group: 지원 항목",
+        "※ 유의사항"
+      ],
+      "lineStart": 1369,
+      "lineEnd": 1383,
+      "charLength": 477
+    },
+    {
+      "id": "063-3단계-멘토-의견-작성",
+      "heading": "3단계 : 멘토 의견 작성",
+      "level": 5,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "3단계 : 멘토 의견 작성"
+      ],
+      "lineStart": 1384,
+      "lineEnd": 1400,
+      "charLength": 460
+    },
+    {
+      "id": "064-4단계-사무국-승인-및-결제",
+      "heading": "4단계 : 사무국 승인 및 결제",
+      "level": 5,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 항목",
+        "4단계 : 사무국 승인 및 결제"
+      ],
+      "lineStart": 1401,
+      "lineEnd": 1433,
+      "charLength": 728
+    },
+    {
+      "id": "065-Board-활동비-지원-방식",
+      "heading": "Board: 활동비 지원 방식",
+      "level": 4,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식"
+      ],
+      "lineStart": 1434,
+      "lineEnd": 1678,
+      "charLength": 7882
+    },
+    {
+      "id": "066-Group-지원-방식",
+      "heading": "Group: 지원 방식",
+      "level": 5,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식"
+      ],
+      "lineStart": 1439,
+      "lineEnd": 1657,
+      "charLength": 6947
+    },
+    {
+      "id": "067-사무국-방문-카드-결제",
+      "heading": "사무국 방문 카드 결제",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "사무국 방문 카드 결제"
+      ],
+      "lineStart": 1441,
+      "lineEnd": 1449,
+      "charLength": 272
+    },
+    {
+      "id": "068-사무국-방문-카드-결제",
+      "heading": "■ 사무국 방문 카드 결제",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "■ 사무국 방문 카드 결제"
+      ],
+      "lineStart": 1450,
+      "lineEnd": 1462,
+      "charLength": 303
+    },
+    {
+      "id": "069-연수생-선결제-후-사후-정산",
+      "heading": "연수생 선결제 후 사후 정산",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "연수생 선결제 후 사후 정산"
+      ],
+      "lineStart": 1463,
+      "lineEnd": 1468,
+      "charLength": 89
+    },
+    {
+      "id": "070-연수생-선결제-후-사후-정산AI·SW-서비스-이용료에-한함",
+      "heading": "■ 연수생 선결제 후 사후 정산(AI·SW 서비스 이용료에 한함)",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "■ 연수생 선결제 후 사후 정산(AI·SW 서비스 이용료에 한함)"
+      ],
+      "lineStart": 1469,
+      "lineEnd": 1492,
+      "charLength": 743
+    },
+    {
+      "id": "071-디바이스마트-구매재료-구매비",
+      "heading": "디바이스마트 구매(재료 구매비)",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "디바이스마트 구매(재료 구매비)"
+      ],
+      "lineStart": 1493,
+      "lineEnd": 1500,
+      "charLength": 174
+    },
+    {
+      "id": "072-디바이스마트-계정-정보-확인-및-로그인",
+      "heading": "▷ 디바이스마트 계정 정보 확인 및 로그인",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "▷ 디바이스마트 계정 정보 확인 및 로그인"
+      ],
+      "lineStart": 1501,
+      "lineEnd": 1509,
+      "charLength": 177
+    },
+    {
+      "id": "073-재료-일반구매",
+      "heading": "■ [재료 일반구매]",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "■ [재료 일반구매]"
+      ],
+      "lineStart": 1510,
+      "lineEnd": 1535,
+      "charLength": 510
+    },
+    {
+      "id": "074-재료-구매대행",
+      "heading": "■ [재료 구매대행]",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "■ [재료 구매대행]"
+      ],
+      "lineStart": 1536,
+      "lineEnd": 1551,
+      "charLength": 406
+    },
+    {
+      "id": "075-전문가-계좌이체",
+      "heading": "전문가 계좌이체",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "전문가 계좌이체"
+      ],
+      "lineStart": 1552,
+      "lineEnd": 1562,
+      "charLength": 218
+    },
+    {
+      "id": "076-전문가-계좌이체",
+      "heading": "■ 전문가 계좌이체",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "■ 전문가 계좌이체"
+      ],
+      "lineStart": 1563,
+      "lineEnd": 1608,
+      "charLength": 1752
+    },
+    {
+      "id": "077-세금계산서-대납",
+      "heading": "세금계산서 대납",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "세금계산서 대납"
+      ],
+      "lineStart": 1609,
+      "lineEnd": 1617,
+      "charLength": 268
+    },
+    {
+      "id": "078-세금계산서-대납",
+      "heading": "■ 세금계산서 대납",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "Group: 지원 방식",
+        "■ 세금계산서 대납"
+      ],
+      "lineStart": 1618,
+      "lineEnd": 1657,
+      "charLength": 1997
+    },
+    {
+      "id": "079-5단계-증빙서류-제출",
+      "heading": "5단계 : 증빙서류 제출",
+      "level": 5,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 지원 방식",
+        "5단계 : 증빙서류 제출"
+      ],
+      "lineStart": 1658,
+      "lineEnd": 1678,
+      "charLength": 885
+    },
+    {
+      "id": "080-Board-활동비-증빙서류",
+      "heading": "Board: 활동비 증빙서류",
+      "level": 4,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류"
+      ],
+      "lineStart": 1679,
+      "lineEnd": 2050,
+      "charLength": 12760
+    },
+    {
+      "id": "081-Group-증빙서류",
+      "heading": "Group: 증빙서류",
+      "level": 5,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류"
+      ],
+      "lineStart": 1684,
+      "lineEnd": 2050,
+      "charLength": 12713
+    },
+    {
+      "id": "082-재료-구매비",
+      "heading": "재료 구매비",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "재료 구매비"
+      ],
+      "lineStart": 1686,
+      "lineEnd": 1689,
+      "charLength": 25
+    },
+    {
+      "id": "083-재료-구매비-증빙서류",
+      "heading": "■ 재료 구매비 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "■ 재료 구매비 증빙서류"
+      ],
+      "lineStart": 1690,
+      "lineEnd": 1713,
+      "charLength": 807
+    },
+    {
+      "id": "084-기자재-임대비",
+      "heading": "기자재 임대비",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "기자재 임대비"
+      ],
+      "lineStart": 1714,
+      "lineEnd": 1717,
+      "charLength": 26
+    },
+    {
+      "id": "085-기자재-임대비-증빙서류",
+      "heading": "■ 기자재 임대비 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "■ 기자재 임대비 증빙서류"
+      ],
+      "lineStart": 1718,
+      "lineEnd": 1723,
+      "charLength": 78
+    },
+    {
+      "id": "086-카드-결제-시-증빙서류",
+      "heading": "▷ 카드 결제 시 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "▷ 카드 결제 시 증빙서류"
+      ],
+      "lineStart": 1724,
+      "lineEnd": 1745,
+      "charLength": 790
+    },
+    {
+      "id": "087-세금계산서-대납-시-증빙서류",
+      "heading": "▷ 세금계산서 대납 시 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "▷ 세금계산서 대납 시 증빙서류"
+      ],
+      "lineStart": 1746,
+      "lineEnd": 1771,
+      "charLength": 1118
+    },
+    {
+      "id": "088-AI·SW-서비스-이용료",
+      "heading": "AI·SW 서비스 이용료",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "AI·SW 서비스 이용료"
+      ],
+      "lineStart": 1772,
+      "lineEnd": 1775,
+      "charLength": 32
+    },
+    {
+      "id": "089-AI·SW-서비스-이용료-증빙서류",
+      "heading": "■ AI·SW 서비스 이용료 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "■ AI·SW 서비스 이용료 증빙서류"
+      ],
+      "lineStart": 1776,
+      "lineEnd": 1803,
+      "charLength": 1100
+    },
+    {
+      "id": "090-전문가-활용비디자인-제작비-포함",
+      "heading": "전문가 활용비(디자인 제작비 포함)",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "전문가 활용비(디자인 제작비 포함)"
+      ],
+      "lineStart": 1804,
+      "lineEnd": 1807,
+      "charLength": 38
+    },
+    {
+      "id": "091-전문가-활용비-증빙서류",
+      "heading": "■ 전문가 활용비 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "■ 전문가 활용비 증빙서류"
+      ],
+      "lineStart": 1808,
+      "lineEnd": 1817,
+      "charLength": 382
+    },
+    {
+      "id": "092-전문가-계좌이체-시-증빙서류",
+      "heading": "▷ 전문가 계좌이체 시 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "▷ 전문가 계좌이체 시 증빙서류"
+      ],
+      "lineStart": 1818,
+      "lineEnd": 1872,
+      "charLength": 2008
+    },
+    {
+      "id": "093-카드-결제-시-증빙서류",
+      "heading": "▷ 카드 결제 시 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "▷ 카드 결제 시 증빙서류"
+      ],
+      "lineStart": 1873,
+      "lineEnd": 1900,
+      "charLength": 865
+    },
+    {
+      "id": "094-세금계산서-대납-시-증빙서류",
+      "heading": "▷ 세금계산서 대납 시 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "▷ 세금계산서 대납 시 증빙서류"
+      ],
+      "lineStart": 1901,
+      "lineEnd": 1935,
+      "charLength": 1302
+    },
+    {
+      "id": "095-마케팅비",
+      "heading": "마케팅비",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "마케팅비"
+      ],
+      "lineStart": 1936,
+      "lineEnd": 1939,
+      "charLength": 23
+    },
+    {
+      "id": "096-마케팅비-증빙서류",
+      "heading": "■ 마케팅비 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "■ 마케팅비 증빙서류"
+      ],
+      "lineStart": 1940,
+      "lineEnd": 1945,
+      "charLength": 132
+    },
+    {
+      "id": "097-카드-결제-시-증빙서류",
+      "heading": "▷ 카드 결제 시 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "▷ 카드 결제 시 증빙서류"
+      ],
+      "lineStart": 1946,
+      "lineEnd": 1971,
+      "charLength": 960
+    },
+    {
+      "id": "098-세금계산서-대납-시-증빙서류",
+      "heading": "▷ 세금계산서 대납 시 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "▷ 세금계산서 대납 시 증빙서류"
+      ],
+      "lineStart": 1972,
+      "lineEnd": 2004,
+      "charLength": 1396
+    },
+    {
+      "id": "099-기타-사용료",
+      "heading": "기타 사용료",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "기타 사용료"
+      ],
+      "lineStart": 2005,
+      "lineEnd": 2008,
+      "charLength": 25
+    },
+    {
+      "id": "100-기타-사용료-증빙서류",
+      "heading": "■ 기타 사용료 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "■ 기타 사용료 증빙서류"
+      ],
+      "lineStart": 2009,
+      "lineEnd": 2014,
+      "charLength": 136
+    },
+    {
+      "id": "101-카드-결제-시-증빙서류",
+      "heading": "▷ 카드 결제 시 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "▷ 카드 결제 시 증빙서류"
+      ],
+      "lineStart": 2015,
+      "lineEnd": 2028,
+      "charLength": 488
+    },
+    {
+      "id": "102-세금계산서-대납-시-증빙서류",
+      "heading": "▷ 세금계산서 대납 시 증빙서류",
+      "level": 6,
+      "path": [
+        "프로젝트 활동비 지원 안내(2026년)",
+        "■ 프로젝트 활동비 지원 절차",
+        "Board: 활동비 증빙서류",
+        "Group: 증빙서류",
+        "▷ 세금계산서 대납 시 증빙서류"
+      ],
+      "lineStart": 2029,
+      "lineEnd": 2050,
+      "charLength": 928
+    }
+  ]
+}

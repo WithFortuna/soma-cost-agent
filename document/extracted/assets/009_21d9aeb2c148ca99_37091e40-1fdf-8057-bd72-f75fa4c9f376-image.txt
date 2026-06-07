@@ -1,0 +1,14 @@
+Source: assets/37091e40-1fdf-8057-bd72-f75fa4c9f376-image.png
+Bytes: 21915
+SHA256: 21d9aeb2c148ca99dc35df22e27013209a731fd54b8cb24fe651f5adcf84cacb
+Extension: .png
+Extraction method: manual image description based on visual inspection and document context
+Duplicate of: 
+Image size: 681x331 RGBA
+
+--- EXTRACTED TEXT ---
+이미지 종류: 일정표 이미지
+요약: 1차부터 5차까지 사용 신청서 제출, 승인/결제/증빙 제출, 비용정산 기간을 정리한 표입니다.
+
+이미지 내 주요 텍스트/의미:
+표 내용: 1차 신청서 제출 및 의견 작성 6.10(수) ~ 6.14(일), 승인/결제 및 증빙서류 제출 ~ 7.3(금), 비용정산 7.6(월) ~ 7.17(금). 2차 7.1(수) ~ 7.12(일), ~ 7.31(금), 8.3(월) ~ 8.14(금). 3차 8.3(월) ~ 8.9(일), ~ 8.31(월), 9.1(화) ~ 9.11(금). 4차 9.1(화) ~ 9.6(일), ~ 9.30(수), 10.1(목) ~ 10.16(금). 5차 10.1(목) ~ 10.11(일), ~ 10.30(금), 11.2(월) ~ 11.13(금).

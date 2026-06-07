@@ -1,0 +1,19 @@
+Source: assets/37191e40-1fdf-80f5-a989-cc81949dbd44-(양식) 비용 지급요청서(세금계산서용)_000팀.docx
+Bytes: 15123
+SHA256: 6b066dd49cd35106a69d5b68eb928e8e9afbdeba2fadfc3b2507235c9dc0c39f
+Extension: .docx
+Extraction method: python-docx paragraphs and tables
+Duplicate of: extracted/assets/017_6b066dd49cd35106_37191e40-1fdf-8059-ba8e-c53846b53e96-__000.txt
+
+--- EXTRACTED TEXT ---
+[TABLE 1]
+비용 지급요청서
+[TABLE 2]
+법인명 |  |  | 사업자등록번호 |  |  | 
+은행명 |  | 계좌번호 |  |  | 예금주 | 
+[TABLE 3]
+사업자 등록증 | 사본 첨부
+사업자 등록증 | 
+[TABLE 4]
+통장 사본 | 사본 첨부
+통장 사본 |

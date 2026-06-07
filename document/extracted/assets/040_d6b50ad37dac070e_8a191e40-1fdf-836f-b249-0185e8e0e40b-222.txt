@@ -1,0 +1,14 @@
+Source: assets/8a191e40-1fdf-836f-b249-0185e8e0e40b-222.PNG
+Bytes: 153569
+SHA256: d6b50ad37dac070ebd3e3f6a04a00e76f6b393482c02f40801aaeba58efc854d
+Extension: .png
+Extraction method: manual image description based on visual inspection and document context
+Duplicate of: 
+Image size: 1820x719 RGBA
+
+--- EXTRACTED TEXT ---
+이미지 종류: 화면 캡처
+요약: 프로젝트 활동비 신청 목록에서 상태가 승인으로 표시된 예시 화면입니다.
+
+이미지 내 주요 텍스트/의미:
+주요 표시 텍스트: 프로젝트 활동비, 신청/접수, 프로젝트 활동비, 구분, 제목, 금액(원), 금액($), 상태, 증빙접수, 팀명, 작성자, 등록일. 예시 행은 프로젝트 활동비 test가 승인 상태로 표시됩니다.

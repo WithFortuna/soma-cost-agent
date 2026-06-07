@@ -1,0 +1,14 @@
+Source: assets/7a591e40-1fdf-83e8-8eb7-8126cbd8153e-프레젠테이션1.png
+Bytes: 101964
+SHA256: 4795d63054772c615a67e3a021b613b724bb664ca14064f7528a2be03d336998
+Extension: .png
+Extraction method: manual image description based on visual inspection and document context
+Duplicate of: 
+Image size: 1280x720 RGB
+
+--- EXTRACTED TEXT ---
+이미지 종류: 화면 캡처
+요약: 프로젝트 활동비 신청 목록에서 증빙하기 버튼을 눌러 증빙서류를 업로드하는 위치를 보여주는 화면입니다.
+
+이미지 내 주요 텍스트/의미:
+주요 표시 텍스트: 프로젝트 활동비, 신청/접수, 프로젝트 활동비, 팀명, 팀장, 팀원, 멘토명, 프로젝트 명, ICT기술분류, 상태 승인, 증빙하기. 증빙접수 열의 증빙하기 버튼이 강조되어 있습니다.

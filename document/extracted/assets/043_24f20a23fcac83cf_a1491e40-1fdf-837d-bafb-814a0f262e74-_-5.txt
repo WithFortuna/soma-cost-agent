@@ -1,0 +1,14 @@
+Source: assets/a1491e40-1fdf-837d-bafb-814a0f262e74-노션꾸미기용-5.png
+Bytes: 63122
+SHA256: 24f20a23fcac83cf94b33ec240c03d4382e02e6a3bf05b1faf1fe52ef0912df2
+Extension: .png
+Extraction method: manual image description based on visual inspection and document context
+Duplicate of: 
+Image size: 800x800 RGB
+
+--- EXTRACTED TEXT ---
+이미지 종류: 장식/단계 이미지
+요약: 프로젝트 활동비 지원 절차의 5단계를 구분하기 위한 장식 이미지입니다.
+
+이미지 내 주요 텍스트/의미:
+정책 판단에 필요한 본문 텍스트는 거의 없습니다.

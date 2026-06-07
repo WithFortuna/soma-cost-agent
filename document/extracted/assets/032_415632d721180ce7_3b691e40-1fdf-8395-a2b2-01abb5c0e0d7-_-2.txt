@@ -1,0 +1,14 @@
+Source: assets/3b691e40-1fdf-8395-a2b2-01abb5c0e0d7-노션꾸미기용-2.png
+Bytes: 66060
+SHA256: 415632d721180ce711189695ce1f667569339ce45d8f0e0587c681e4da522e22
+Extension: .png
+Extraction method: manual image description based on visual inspection and document context
+Duplicate of: 
+Image size: 800x800 RGB
+
+--- EXTRACTED TEXT ---
+이미지 종류: 장식/단계 이미지
+요약: 프로젝트 활동비 지원 절차의 2단계를 구분하기 위한 장식 이미지입니다.
+
+이미지 내 주요 텍스트/의미:
+정책 판단에 필요한 본문 텍스트는 거의 없습니다.

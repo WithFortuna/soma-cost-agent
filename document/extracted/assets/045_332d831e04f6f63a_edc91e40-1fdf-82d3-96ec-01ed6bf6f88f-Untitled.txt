@@ -1,0 +1,14 @@
+Source: assets/edc91e40-1fdf-82d3-96ec-01ed6bf6f88f-Untitled.png
+Bytes: 210935
+SHA256: 332d831e04f6f63a5c340dd2e80c659a4584a84f87c17eb5e0e74d4798238b98
+Extension: .png
+Extraction method: manual image description based on visual inspection and document context
+Duplicate of: 
+Image size: 997x768 RGBA
+
+--- EXTRACTED TEXT ---
+이미지 종류: 디바이스마트 주문 화면
+요약: 디바이스마트 주문서에서 배송지와 주문자 정보를 작성하고 여신결제(기업후불)를 선택하는 예시 화면입니다.
+
+이미지 내 주요 텍스트/의미:
+주요 표시 텍스트: 배송지, 실수령자 정보 입력, 주문자, 배송지 정보와 동일, 할인 및 적립, 상품금액, 부가세, 배송비, 최종 결제금액, 결제정보, 여신결제(기업후불), 결제하기. 일반상품 주문 가이드라인에서 사용됩니다.
