@@ -90,26 +90,6 @@ target 프로젝트의 `.codex/cse-policy-harness.json`에는 설치 상태가 �
 
 hook과 subagent 지침은 이 state file을 통해 문서와 script 위치를 찾습니다.
 
-## Included Components
-
-```text
-.codex-plugin/plugin.json
-.agents/plugins/marketplace.json
-plugins/cost-soma-policy-harness-mac -> ..
-skills/
-scripts/
-document/
-hooks/
-agents/
-commands/
-install/
-tests/
-README.md
-WORKFLOW.md
-```
-
-MCP runtime은 포함하지 않습니다. `hooks/hooks.json`도 포함하지 않습니다. Hook은 플러그인 설치 시 전역으로 돌지 않고, activation 후 target 프로젝트의 `.codex/hooks.json`에만 기록됩니다. 정책 처리는 `scripts/policy_tool.py` -> `scripts/policy_core.py` -> `scripts/policy_engine.py` 경로로만 동작합니다.
-
 ## Manual Fallback
 
 Codex 안에서 activator skill을 실행할 수 없는 환경에서는 직접 실행할 수 있습니다.
@@ -125,18 +105,6 @@ Python 3.10 이상이 필요합니다. 부족하면 Homebrew Python을 설치한
 ```bash
 brew install python
 ```
-
-## Policy CLI
-
-```bash
-python3 scripts/policy_tool.py classify --question "디자인 외주 맡기려고해"
-python3 scripts/policy_tool.py form --question "맥북용 허브독 사려고함"
-python3 scripts/policy_tool.py form-packet --question "구매대행 신청서 만들어줘" --category material_purchase --stage application
-python3 scripts/policy_tool.py validate --question "디자인 외주 맡기려고해" --answer-file answer.md
-python3 scripts/render_evidence_view.py --question "라즈베리파이와 허브 구매 가능해?"
-```
-
-모든 command는 JSON만 출력합니다.
 
 ## Evidence HTML Viewer
 
