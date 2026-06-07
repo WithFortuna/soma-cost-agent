@@ -13,6 +13,7 @@ POLICY_HINT_RE = re.compile(
     r"(?i)(soma|sw\s*maestro|활동비|지원|증빙|양식|서식|신청서|지급요청서|사무국|멘토|구매|결제|정산|aws|클라우드|"
     r"디바이스마트|허브|도킹|독|외주|디자인|전문가|마케팅|기자재|재료|ai|sw|서비스)"
 )
+STATE_NAMES = ["cse-policy-harness.json", "cost-soma-policy-harness.json"]
 
 
 def state_path() -> Path | None:
@@ -21,9 +22,10 @@ def state_path() -> Path | None:
         return Path(configured)
     current = Path(__file__).resolve()
     for parent in current.parents:
-        candidate = parent / ".codex" / "cost-soma-policy-harness.json"
-        if candidate.exists():
-            return candidate
+        for name in STATE_NAMES:
+            candidate = parent / ".codex" / name
+            if candidate.exists():
+                return candidate
     return None
 
 
@@ -71,7 +73,7 @@ def audit_dir() -> Path:
     root = Path(
         os.environ.get(
             "COST_SOMA_AUDIT_DIR",
-            state.get("audit_dir") or str(repo_root() / ".codex" / "cost-soma-audit"),
+            state.get("audit_dir") or str(repo_root() / ".codex" / "cse-audit"),
         )
     )
     root.mkdir(parents=True, exist_ok=True)

@@ -1,4 +1,4 @@
-name = "policy-evidence"
+name = "cse-policy-evidence"
 description = "Collect Cost SOMA support-item candidates, supporting evidence, conflicting evidence, and source references."
 model = "gpt-5.5"
 model_reasoning_effort = "high"

@@ -1,4 +1,4 @@
-name = "policy-application"
+name = "cse-policy-application"
 description = "Prepare Cost SOMA application method, writing format, user choices, draft wording, cautions, and required documents."
 sandbox_mode = "read-only"
 developer_instructions = """
@@ -26,5 +26,5 @@ Return:
 For 글쓰기 fields, ask for choices only where a decision or missing fact is required and draft the rest yourself.
 Do not regroup board writing fields into 공통 and item-specific subsections. Preserve the support-item board format and field order from writing_format_text, including 구분, 제목, 상세구분, 품목명, 결제방식, 세부사항, 수량, 금액, 구매사유, and 첨부파일 when present.
 Do not write the final user-facing answer.
-Do not create files yourself unless explicitly assigned as a file-writing worker; policy-application identifies template/data requirements only.
+Do not create files yourself unless explicitly assigned as a file-writing worker; cse-policy-application identifies template/data requirements only.
 """

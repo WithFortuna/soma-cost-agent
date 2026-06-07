@@ -9,8 +9,23 @@ from pathlib import Path
 from typing import Any
 
 
-HOOK_FILES = ["harness_common.py", "user_prompt_submit.py", "stop_policy_review.py"]
-AGENT_FILES = ["policy-evidence.toml", "policy-application.toml", "policy-reviewer.toml"]
+STATE_NAMES = ["cse-policy-harness.json", "cost-soma-policy-harness.json"]
+HOOK_FILES = [
+    "cse-harness-common.py",
+    "cse-user-prompt-submit.py",
+    "cse-stop-policy-review.py",
+    "harness_common.py",
+    "user_prompt_submit.py",
+    "stop_policy_review.py",
+]
+AGENT_FILES = [
+    "cse-policy-evidence.toml",
+    "cse-policy-application.toml",
+    "cse-policy-reviewer.toml",
+    "policy-evidence.toml",
+    "policy-application.toml",
+    "policy-reviewer.toml",
+]
 
 
 def fail(message: str) -> None:
@@ -41,7 +56,16 @@ def backup(path: Path) -> Path | None:
 
 def is_cost_soma_hook(entry: Any) -> bool:
     text = json.dumps(entry, ensure_ascii=False)
-    markers = ["Cost SOMA", "cost_soma", "cost-soma", "user_prompt_submit.py", "stop_policy_review.py"]
+    markers = [
+        "Cost SOMA",
+        "COST_SOMA_HARNESS_STATE",
+        "cse-policy-harness.json",
+        "cost-soma-policy-harness.json",
+        "cse-user-prompt-submit.py",
+        "cse-stop-policy-review.py",
+        "cost-soma-policy-harness-mac",
+        "soma-cost-agent",
+    ]
     return any(marker in text for marker in markers)
 
 
@@ -94,7 +118,8 @@ def deactivate(target: Path) -> None:
         if skill.is_dir():
             remove_dir(skill, target)
 
-    remove_file(codex_dir / "cost-soma-policy-harness.json")
+    for name in STATE_NAMES:
+        remove_file(codex_dir / name)
 
     print("Cost SOMA Policy Harness deactivated.")
     print(f"target: {target}")

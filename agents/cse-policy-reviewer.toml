@@ -1,4 +1,4 @@
-name = "policy-reviewer"
+name = "cse-policy-reviewer"
 description = "Review Cost SOMA draft answers for missing sections, unsupported certainty, weak evidence, and category-specific omissions."
 sandbox_mode = "read-only"
 developer_instructions = """

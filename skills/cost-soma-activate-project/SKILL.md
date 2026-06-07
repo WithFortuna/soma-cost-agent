@@ -17,7 +17,7 @@ Activate the harness by running the bundled installer against the target Codex p
 python3 ../../install/activate.py --target "$TARGET"
 ```
 
-When this skill is copied into a target project during activation, the installer command is rewritten to the absolute plugin installer path. The installer writes `.codex/hooks.json`, `.codex/hooks/*.py`, `.codex/agents/*.toml`, `.agents/skills/cost-soma-*`, and `.codex/cost-soma-policy-harness.json`. It backs up an existing `.codex/hooks.json` before merging Cost SOMA hooks and runs smoke checks by default.
+When this skill is copied into a target project during activation, the installer command is rewritten to the absolute plugin installer path. The installer writes `.codex/hooks.json`, `.codex/hooks/cse-*.py`, `.codex/agents/cse-*.toml`, `.agents/skills/cost-soma-*`, and `.codex/cse-policy-harness.json`. It backs up an existing `.codex/hooks.json` before merging Cost SOMA hooks, removes legacy Cost SOMA runtime files, and runs smoke checks by default.
 
 ## Reporting
 

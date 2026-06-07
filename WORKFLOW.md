@@ -22,10 +22,10 @@ Plugin installation makes the activator skills available. It does not assume a s
 The activator skill installs project-scoped runtime files into the currently open Codex project:
 
 - `.codex/hooks.json`
-- `.codex/hooks/*.py`
-- `.codex/agents/*.toml`
+- `.codex/hooks/cse-*.py`
+- `.codex/agents/cse-*.toml`
 - `.agents/skills/cost-soma-*`
-- `.codex/cost-soma-policy-harness.json`
+- `.codex/cse-policy-harness.json`
 
 Use `cost-soma-activate-project` or `/activate-harness` to activate. Use `cost-soma-deactivate-project` or `/deactivate-harness` to remove the project integration.
 
@@ -55,13 +55,13 @@ The harness uses function-split skills.
 
 For every detected Cost SOMA policy question, the injected context tells Codex to use team mode.
 
-- Spawn `policy-evidence` and `policy-application` in parallel.
+- Spawn `cse-policy-evidence` and `cse-policy-application` in parallel.
 - Wait for both summaries.
 - Draft the answer in the main Codex session.
-- Spawn `policy-reviewer`.
+- Spawn `cse-policy-reviewer`.
 - Revise and finalize from the reviewer findings.
 
-`policy-evidence` keeps `model = "gpt-5.5"` and `model_reasoning_effort = "high"`. Other subagents inherit the parent session unless the local agent file says otherwise.
+`cse-policy-evidence` keeps `model = "gpt-5.5"` and `model_reasoning_effort = "high"`. Other subagents inherit the parent session unless the local agent file says otherwise.
 
 ### Scripts
 
@@ -95,13 +95,13 @@ flowchart TD
     C -- "No" --> Z["일반 Codex 흐름"]
     C -- "Yes" --> D["Team mode 컨텍스트 주입"]
     D --> E["Orchestrator Skill"]
-    E --> F["Subagent: policy-evidence"]
-    E --> G["Subagent: policy-application"]
+    E --> F["Subagent: cse-policy-evidence"]
+    E --> G["Subagent: cse-policy-application"]
     F --> H["문서 근거 / 충돌 근거 / 후보 항목"]
     G --> I["신청방법 / 글쓰기 포맷 / 선택지 / 유의사항"]
     H --> J["Main Codex 답변 초안"]
     I --> J
-    J --> K["Subagent: policy-reviewer"]
+    J --> K["Subagent: cse-policy-reviewer"]
     K --> L{"실제 양식 작성 요청?"}
     L -- "No" --> M["최종 답변"]
     L -- "Yes" --> N["form-packet 생성"]

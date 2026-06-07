@@ -45,6 +45,8 @@ codex plugin add cost-soma-policy-harness-mac@soma-cost-agent
 
 설치 또는 재설치 후에는 새 thread에서 테스트해야 Codex가 갱신된 plugin skills를 읽습니다.
 
+기존에 0.3.2 이하로 프로젝트를 활성화한 사용자는 marketplace upgrade 후 해당 프로젝트에서 다시 활성화하면 됩니다. 재활성화 과정에서 예전 `policy-*` agent 파일, `user_prompt_submit.py`/`stop_policy_review.py` hook 파일, 예전 state 파일은 `cse-` 접두사 runtime으로 교체됩니다.
+
 ## Deactivate
 
 Codex에 아래처럼 말합니다.
@@ -65,17 +67,17 @@ target 프로젝트에 아래 파일을 생성하거나 갱신합니다.
 
 ```text
 .codex/hooks.json
-.codex/hooks/*.py
-.codex/agents/*.toml
+.codex/hooks/cse-*.py
+.codex/agents/cse-*.toml
 .agents/skills/cost-soma-*
-.codex/cost-soma-policy-harness.json
+.codex/cse-policy-harness.json
 ```
 
-기존 `.codex/hooks.json`이 있으면 timestamp 백업을 만든 뒤 `UserPromptSubmit`, `Stop` hook에 Cost SOMA hook을 병합합니다. hook command는 활성화에 사용된 Python 절대 경로를 사용합니다.
+기존 `.codex/hooks.json`이 있으면 timestamp 백업을 만든 뒤 `UserPromptSubmit`, `Stop` hook에 Cost SOMA hook을 병합합니다. hook/agent/state 파일명은 기존 설정과 겹치지 않도록 `cse-` 접두사를 사용합니다. 예전 버전에서 설치된 Cost SOMA runtime 파일과 hook entry는 재활성화 시 정리됩니다. hook command는 활성화에 사용된 Python 절대 경로를 사용합니다.
 
 ## Runtime State
 
-target 프로젝트의 `.codex/cost-soma-policy-harness.json`에는 설치 상태가 저장됩니다.
+target 프로젝트의 `.codex/cse-policy-harness.json`에는 설치 상태가 저장됩니다.
 
 ```json
 {

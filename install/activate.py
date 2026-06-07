@@ -14,16 +14,20 @@ from typing import Any
 
 
 PLUGIN_ROOT = Path(__file__).resolve().parents[1]
-HOOK_FILES = ["harness_common.py", "user_prompt_submit.py", "stop_policy_review.py"]
-AGENT_FILES = ["policy-evidence.toml", "policy-application.toml", "policy-reviewer.toml"]
+STATE_NAME = "cse-policy-harness.json"
+LEGACY_STATE_NAMES = ["cost-soma-policy-harness.json"]
+HOOK_FILES = ["cse-harness-common.py", "cse-user-prompt-submit.py", "cse-stop-policy-review.py"]
+LEGACY_HOOK_FILES = ["harness_common.py", "user_prompt_submit.py", "stop_policy_review.py"]
+AGENT_FILES = ["cse-policy-evidence.toml", "cse-policy-application.toml", "cse-policy-reviewer.toml"]
+LEGACY_AGENT_FILES = ["policy-evidence.toml", "policy-application.toml", "policy-reviewer.toml"]
 HOOK_EVENT_SPECS = {
     "UserPromptSubmit": {
-        "script": "user_prompt_submit.py",
+        "script": "cse-user-prompt-submit.py",
         "timeout": 10,
         "statusMessage": "Checking Cost SOMA policy intent",
     },
     "Stop": {
-        "script": "stop_policy_review.py",
+        "script": "cse-stop-policy-review.py",
         "timeout": 15,
         "statusMessage": "Auditing Cost SOMA policy answer",
     },
@@ -143,10 +147,12 @@ def is_cost_soma_hook(entry: Any) -> bool:
     text = json.dumps(entry, ensure_ascii=False)
     markers = [
         "Cost SOMA",
-        "cost_soma",
-        "cost-soma",
-        "user_prompt_submit.py",
-        "stop_policy_review.py",
+        "COST_SOMA_HARNESS_STATE",
+        STATE_NAME,
+        "cse-user-prompt-submit.py",
+        "cse-stop-policy-review.py",
+        "cost-soma-policy-harness-mac",
+        "soma-cost-agent",
     ]
     return any(marker in text for marker in markers)
 
@@ -185,7 +191,7 @@ def merge_hooks(hooks_json_path: Path, hook_dir: Path, python: str) -> Path | No
 def run_smoke(target: Path, state: dict[str, str]) -> None:
     env = os.environ.copy()
     env["COST_SOMA_DOCUMENT_ROOT"] = state["document_root"]
-    env["COST_SOMA_HARNESS_STATE"] = str(target / ".codex" / "cost-soma-policy-harness.json")
+    env["COST_SOMA_HARNESS_STATE"] = str(target / ".codex" / STATE_NAME)
     commands = [
         [state["python"], state["policy_tool"], "classify", "--question", "Aws사용하러는데 뭐해야함"],
         [state["python"], state["policy_tool"], "form", "--question", "맥북용 허브독 사려고함"],
@@ -232,6 +238,19 @@ def activate(target: Path, skip_smoke: bool) -> None:
     agents_dir.mkdir(parents=True, exist_ok=True)
     agent_skills_dir.mkdir(parents=True, exist_ok=True)
 
+    for name in LEGACY_HOOK_FILES:
+        path = hooks_dir / name
+        if path.exists() and path.is_file():
+            path.unlink()
+    for name in LEGACY_AGENT_FILES:
+        path = agents_dir / name
+        if path.exists() and path.is_file():
+            path.unlink()
+    for name in LEGACY_STATE_NAMES:
+        path = codex_dir / name
+        if path.exists() and path.is_file():
+            path.unlink()
+
     for name in HOOK_FILES:
         shutil.copy2(PLUGIN_ROOT / "hooks" / "scripts" / name, hooks_dir / name)
 
@@ -256,10 +275,10 @@ def activate(target: Path, skip_smoke: bool) -> None:
         "document_root": str(document_root),
         "policy_tool": str(policy_tool),
         "python": python,
-        "audit_dir": str(codex_dir / "cost-soma-audit"),
+        "audit_dir": str(codex_dir / "cse-audit"),
         "installed_at": dt.datetime.now(dt.timezone.utc).isoformat(),
     }
-    state_path = codex_dir / "cost-soma-policy-harness.json"
+    state_path = codex_dir / STATE_NAME
     write_json(state_path, state)
     backup_path = merge_hooks(codex_dir / "hooks.json", hooks_dir, python)
 

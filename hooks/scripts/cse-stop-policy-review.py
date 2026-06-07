@@ -1,21 +1,28 @@
 from __future__ import annotations
 
 import json
+import importlib.util
 import os
 import re
 import subprocess
+from pathlib import Path
+from types import ModuleType
 
-from harness_common import (
-    document_root,
-    emit_stop_result,
-    looks_like_policy_question,
-    policy_tool_path,
-    python_path,
-    read_stdin_json,
-    repo_root,
-    text_from_event,
-    write_audit,
-)
+
+def load_common() -> ModuleType:
+    for filename in ("cse-harness-common.py", "harness_common.py"):
+        path = Path(__file__).resolve().with_name(filename)
+        if not path.exists():
+            continue
+        spec = importlib.util.spec_from_file_location("cse_harness_common", path)
+        if spec and spec.loader:
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+            return module
+    raise RuntimeError("missing Cost SOMA hook common module")
+
+
+common = load_common()
 
 
 def answer_from_event(event: dict) -> str:
@@ -23,7 +30,7 @@ def answer_from_event(event: dict) -> str:
         item = event.get(key)
         if isinstance(item, str) and item.strip():
             return item
-    return text_from_event(event)
+    return common.text_from_event(event)
 
 
 def question_from_event(event: dict) -> str:
@@ -36,8 +43,8 @@ def question_from_event(event: dict) -> str:
 
 def validate_with_tool(question: str, answer: str) -> dict:
     command = [
-        python_path(),
-        str(policy_tool_path()),
+        common.python_path(),
+        str(common.policy_tool_path()),
         "validate",
         "--question",
         question,
@@ -45,7 +52,7 @@ def validate_with_tool(question: str, answer: str) -> dict:
         "-",
     ]
     env = os.environ.copy()
-    docs = document_root()
+    docs = common.document_root()
     if docs:
         env["COST_SOMA_DOCUMENT_ROOT"] = str(docs)
     try:
@@ -54,7 +61,7 @@ def validate_with_tool(question: str, answer: str) -> dict:
             input=answer,
             text=True,
             capture_output=True,
-            cwd=str(repo_root()),
+            cwd=str(common.repo_root()),
             env=env,
             timeout=12,
             check=False,
@@ -100,7 +107,7 @@ FORM_HANDOFF_RE = re.compile(
 
 def add_form_artifact_findings(question: str, answer: str, findings: list[str]) -> list[str]:
     if (
-        looks_like_policy_question(" ".join([question or "", answer or ""]))
+        common.looks_like_policy_question(" ".join([question or "", answer or ""]))
         and FORM_GENERATION_RE.search(question or "")
         and not FORM_HANDOFF_RE.search(answer or "")
     ):
@@ -112,13 +119,13 @@ def add_form_artifact_findings(question: str, answer: str, findings: list[str]) 
 
 
 def main() -> int:
-    event = read_stdin_json()
+    event = common.read_stdin_json()
     question = question_from_event(event)
     answer = answer_from_event(event)
     validation = validate_with_tool(question, answer)
     findings = add_form_artifact_findings(question, answer, list(validation.get("findings", [])))
-    write_audit(
-        "stop_policy_review",
+    common.write_audit(
+        "cse-stop-policy-review",
         {
             "question_preview": question[:500],
             "findings": findings,
@@ -128,14 +135,14 @@ def main() -> int:
     )
 
     if findings:
-        emit_stop_result(
+        common.emit_stop_result(
             "[Cost SOMA Policy Harness Audit]\n"
             "Potential policy-answer issues detected: "
             + "; ".join(findings)
             + "\nUse policy_tool.py validate and revise if this was a Cost SOMA policy answer."
         )
     else:
-        emit_stop_result()
+        common.emit_stop_result()
     return 0
 
 

@@ -23,10 +23,10 @@ python3 scripts/policy_tool.py form-packet --question "$QUESTION" --category "$C
 
 ## Always Team Mode
 
-1. Spawn `policy-evidence` and `policy-application` in parallel.
+1. Spawn `cse-policy-evidence` and `cse-policy-application` in parallel.
 2. Wait for both summaries.
 3. Draft the answer.
-4. Spawn `policy-reviewer`.
+4. Spawn `cse-policy-reviewer`.
 5. Revise and finalize.
 6. If the user asked for an actual DOCX/XLSX form, run the form artifact flow after policy review.
 

@@ -17,7 +17,7 @@ Deactivate the harness by running the bundled uninstaller against the target Cod
 python3 ../../install/deactivate.py --target "$TARGET"
 ```
 
-When this skill is copied into a target project during activation, the uninstaller command is rewritten to the absolute plugin uninstaller path. The uninstaller removes Cost SOMA hook entries, copied hook scripts, custom agent files, repo-scoped Cost SOMA skills, and `.codex/cost-soma-policy-harness.json`. It backs up an existing `.codex/hooks.json` before editing and leaves unrelated project hooks alone.
+When this skill is copied into a target project during activation, the uninstaller command is rewritten to the absolute plugin uninstaller path. The uninstaller removes Cost SOMA hook entries, copied `cse-` hook scripts, custom `cse-` agent files, repo-scoped Cost SOMA skills, `.codex/cse-policy-harness.json`, and legacy Cost SOMA runtime files. It backs up an existing `.codex/hooks.json` before editing and leaves unrelated project hooks alone.
 
 ## Reporting
 

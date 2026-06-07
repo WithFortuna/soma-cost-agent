@@ -11,17 +11,17 @@ from typing import Any
 
 
 DIST_ROOT = Path(__file__).resolve().parents[1]
-STATE_NAME = "cost-soma-policy-harness.json"
+STATE_NAME = "cse-policy-harness.json"
 TEXT_SUFFIXES = {".json", ".md", ".py", ".toml", ".txt", ".yml", ".yaml", ".sh"}
 FORBIDDEN_TEXT = ["/mnt" + "/c", "C:" + "\\", "mcp" + "Servers", "cost_soma_policy" + "_mcp"]
 REQUIRED_TARGET_FILES = [
     ".codex/hooks.json",
-    ".codex/hooks/harness_common.py",
-    ".codex/hooks/user_prompt_submit.py",
-    ".codex/hooks/stop_policy_review.py",
-    ".codex/agents/policy-evidence.toml",
-    ".codex/agents/policy-application.toml",
-    ".codex/agents/policy-reviewer.toml",
+    ".codex/hooks/cse-harness-common.py",
+    ".codex/hooks/cse-user-prompt-submit.py",
+    ".codex/hooks/cse-stop-policy-review.py",
+    ".codex/agents/cse-policy-evidence.toml",
+    ".codex/agents/cse-policy-application.toml",
+    ".codex/agents/cse-policy-reviewer.toml",
     ".agents/skills/cost-soma-policy-orchestrator/SKILL.md",
     ".agents/skills/cost-soma-evidence/SKILL.md",
     ".agents/skills/cost-soma-application/SKILL.md",
@@ -29,6 +29,15 @@ REQUIRED_TARGET_FILES = [
     ".agents/skills/cost-soma-evidence-viewer/SKILL.md",
     ".agents/skills/cost-soma-activate-project/SKILL.md",
     ".agents/skills/cost-soma-deactivate-project/SKILL.md",
+]
+FORBIDDEN_TARGET_FILES = [
+    ".codex/hooks/harness_common.py",
+    ".codex/hooks/user_prompt_submit.py",
+    ".codex/hooks/stop_policy_review.py",
+    ".codex/agents/policy-evidence.toml",
+    ".codex/agents/policy-application.toml",
+    ".codex/agents/policy-reviewer.toml",
+    ".codex/cost-soma-policy-harness.json",
 ]
 
 
@@ -103,13 +112,19 @@ def assert_hook_command_is_unix(target: Path) -> None:
     text = json.dumps(hooks, ensure_ascii=False)
     if "/mnt" + "/c" in text or "C:" + "\\" in text:
         fail("installed hook command contains a WSL or Windows path")
-    if "user_prompt_submit.py" not in text or "stop_policy_review.py" not in text:
+    if "cse-user-prompt-submit.py" not in text or "cse-stop-policy-review.py" not in text:
         fail("installed hooks.json does not reference Cost SOMA hook scripts")
+    for legacy in ["user_prompt_submit.py", "stop_policy_review.py"]:
+        if legacy in text:
+            fail(f"installed hooks.json still references legacy hook script: {legacy}")
 
 
 def check_target_layout(target: Path) -> None:
     for rel in REQUIRED_TARGET_FILES:
         assert_exists(target / rel)
+    for rel in FORBIDDEN_TARGET_FILES:
+        if (target / rel).exists():
+            fail(f"legacy unprefixed runtime file should not remain: {rel}")
     assert_hook_command_is_unix(target)
     activate_skill = (target / ".agents/skills/cost-soma-activate-project/SKILL.md").read_text(encoding="utf-8")
     deactivate_skill = (target / ".agents/skills/cost-soma-deactivate-project/SKILL.md").read_text(encoding="utf-8")
@@ -199,17 +214,17 @@ def check_hooks(target: Path, state: dict[str, str]) -> None:
     env["COST_SOMA_DOCUMENT_ROOT"] = state["document_root"]
 
     prompt_payload = run_json(
-        [state["python"], str(target / ".codex" / "hooks" / "user_prompt_submit.py")],
+        [state["python"], str(target / ".codex" / "hooks" / "cse-user-prompt-submit.py")],
         cwd=target,
         env=env,
         stdin=json.dumps({"prompt": "디자인 외주 맡기려고해"}, ensure_ascii=False),
     )
     context = prompt_payload.get("hookSpecificOutput", {}).get("additionalContext", "")
-    if "policy-evidence" not in context or "policy-application" not in context or state["policy_tool"] not in context:
+    if "cse-policy-evidence" not in context or "cse-policy-application" not in context or state["policy_tool"] not in context:
         fail("UserPromptSubmit hook did not inject team-mode policy context")
 
     neutral_payload = run_json(
-        [state["python"], str(target / ".codex" / "hooks" / "user_prompt_submit.py")],
+        [state["python"], str(target / ".codex" / "hooks" / "cse-user-prompt-submit.py")],
         cwd=target,
         env=env,
         stdin=json.dumps({"prompt": "오늘 날씨 어때"}, ensure_ascii=False),
@@ -218,7 +233,7 @@ def check_hooks(target: Path, state: dict[str, str]) -> None:
         fail("UserPromptSubmit hook injected context for a non-policy prompt")
 
     stop_payload = run_json(
-        [state["python"], str(target / ".codex" / "hooks" / "stop_policy_review.py")],
+        [state["python"], str(target / ".codex" / "hooks" / "cse-stop-policy-review.py")],
         cwd=target,
         env=env,
         stdin=json.dumps(
